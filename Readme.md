@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Альберт Петрицкий](https://up.htmlacademy.ru/adaptive/16/user/158254).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктория Коваленко`.
 
 ---
 
