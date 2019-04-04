@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка Каталог</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <a class="main-nav__logo main-logo" href="index.html" aria-label="Логотип Мишка">
+          <img src="http://placehold.it/150*100" alt="логотип Мишка">
+        </a>
+        <button class="main-nav__toggle menu-toggle" type="button" aria-label="Меню"></button>
+      </div>
+      <ul class="main-nav__site-list site-navigation">
+        <li class="site-navigation__item">
+          <a href="catalog.html" class="site-navigation__link">Каталог товаров</a>
+        </li>
+        <li class="site-navigation__item">
+          <a href="order.html" class="site-navigation__link">Вязание на заказ</a>
+        </li>
+      </ul>
+      <ul class="main-nav__user-list user-navigation">
+        <li class="user-navigation__item">
+          <a href="#" class="user-navigation__link user-navigation__link--search">Поиск
+            по сайту</a>
+        </li>
+        <li class="user-navigation__item">
+          <a href="#" class="user-navigation__link user-navigation__link--cart">Корзина:
+            пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog-page">
+    <header class="page-header">
+      <h1 class="page-header__title">Каталог товаров</h1>
+    </header>
+
+    <section class="catalog">
+      <article class="catalog__card-product card-product">
+        <a class="card-product__link-image" href="#">
+          <img src="http://placehold.it/150*100" alt="зайчик-попрыгайчик">
+        </a>
+        <h3 class="card-product__title">
+          <a class="card-product__link" href="#">Зайчик-попрыгайчик</a>
+        </h3>
+        <p class="card-product__description">Рост 30 см, вес 200 г</p>
+        <p class="card-product__price">1 200 руб.</p>
+      </article>
+
+      <article class="card-product catalog__card-product">
+        <a class="card-product__link-image" href="#">
+          <img src="http://placehold.it/150*100" alt="корзинка для белья">
+        </a>
+        <h3 class="card-product__title">
+          <a class="card-product__link" href="#">Корзинка для белья</a>
+        </h3>
+        <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
+        <p class="card-product__price">690 руб.</p>
+      </article>
+
+      <article class="card-product catalog__card-product">
+        <a class="card-product__link-image" href="#">
+          <img src="http://placehold.it/150*100" alt="большая корзинка для игрушек">
+        </a>
+        <h3 class="card-product__title">
+          <a class="card-product__link" href="#">Большая корзинка для&nbsp;игрушек</a>
+        </h3>
+        <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
+        <p class="card-product__price">1 500 руб.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <ul class="social-links">
+      <li class="social-links__item">
+        <a class="social-links__link" href="https://www.instagram.com" aria-label="Instagram"></a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook"></a>
+      </li>
+      <li class="social-links__item">
+        <a class="social-links__link" href="https://twitter.com" aria-label="Twitter"></a>
+      </li>
+    </ul>
+    <p class="page-footer__copyright">
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <span class="page-footer__copyright-text">Разработано</span>
+      </a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
