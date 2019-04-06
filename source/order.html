@@ -39,8 +39,107 @@
 
   <main class="order-page">
     <header class="page-header">
-      <h1 class="page-header__title">Вязяние на заказ</h1>
+      <h1 class="page-header__title">Вязание на заказ</h1>
     </header>
+
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-feedback__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
+        простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <fieldset class="form-feedback__fieldset form-feedback__fieldset--type content-wrapper">
+        <legend class="form-feedback__legend">
+          <span class="form-feedback__legend-text">Тип</span>
+        </legend>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--type">
+          <input class="form-feedback__radio visually-hidden" type="radio" id="interior" name="type" value="1" checked>
+          <label class="form-feedback__label-radio" for="interior">Аксессуар для интерьера</label>
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--type">
+          <input class="form-feedback__radio visually-hidden" type="radio" id="toy" value="2" name="type">
+          <label class="form-feedback__label-radio" for="toy">Детская игрушка</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="form-feedback__fieldset form-feedback__fieldset--color content-wrapper">
+        <legend class="form-feedback__legend">
+          <span class="form-feedback__legend-text">Цвет</span>
+        </legend>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
+          <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-white" name="color-white"
+            checked>
+          <label class="form-feedback__label-checkbox" for="color-white">Белый</label>
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
+          <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-gray" name="color-gray"
+            checked>
+          <label class="form-feedback__label-checkbox" for="color-gray">Серый</label>
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
+          <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-tiffany"
+            name="color-tiffany">
+          <label class="form-feedback__label-checkbox" for="color-tiffany">«Тиффани»</label>
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
+          <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-black" name="color-black">
+          <label class="form-feedback__label-checkbox" for="color-black">Черный</label>
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
+          <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-pink" name="color-pink">
+          <label class="form-feedback__label-checkbox" for="color-pink">Розовый</label>
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--color">
+          <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="color-orange" name="color-orange">
+          <label class="form-feedback__label-checkbox" for="color-orange">Оранжевый</label>
+        </p>
+      </fieldset>
+
+      <fieldset class="form-feedback__fieldset form-feedback__fieldset--name content-wrapper">
+        <legend class="form-feedback__legend">
+          <span class="form-feedback__legend-text">ФИО</span>
+        </legend>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
+          <label class="form-feedback__label" for="firstname">Имя:</label>
+          <input class="form-feedback__input-text" type="text" id="firstname" name="firstname"
+            placeholder="Введите ваше имя*">
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
+          <label class="form-feedback__label" for="lastname">Фамилия:</label>
+          <input class="form-feedback__input-text" type="text" id="lastname" name="lastname"
+            placeholder="Укажите фамилию*">
+        </p>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--name">
+          <label class="form-feedback__label" for="middlename">Отчество:</label>
+          <input class="form-feedback__input-text" type="text" id="middlename" name="middlename"
+            placeholder="Отчество, если желаете">
+        </p>
+      </fieldset>
+
+      <fieldset class="form-feedback__fieldset form-feedback__fieldset--contact content-wrapper">
+        <label class="form-feedback__legend form-feedback__legend--phone" for="phone">
+          <span class="form-feedback__legend-text">Тел</span>
+        </label>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--contact">
+          <input class="form-feedback__input-text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </p>
+        <label class="form-feedback__legend form-feedback__legend--email" for="email">
+          <span class="form-feedback__legend-text">E-mail</span>
+        </label>
+        <p class="form-feedback__input-wrapper form-feedback__input-wrapper--contact">
+          <input class="form-feedback__input-text" type="email" id="email" name="email" placeholder="Ваш Email*">
+        </p>
+      </fieldset>
+
+      <fieldset class="form-feedback__fieldset form-feedback__fieldset--message content-wrapper">
+        <legend class="form-feedback__legend">
+          <span class="form-feedback__legend-text">Доп</span>
+        </legend>
+        <textarea class="form-feedback__input-text form-feedback__textarea" name="message"
+          placeholder="Опишите все ваши пожелания к заказу">
+            </textarea>
+      </fieldset>
+
+      <p class="form-feedback__notification">*Поля обязательны для заполнения</p>
+      <button class="form-feedback__button button" type="submit">Отправить заказ</button>
+    </form>
   </main>
 
   <footer class="page-footer">
