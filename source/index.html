@@ -87,16 +87,53 @@
     <section class="advantages">
       <h2 class="advantages__title section-title">Коротко о нас:</h2>
       <ul class="advantages__list">
-        <li class="advantages__list-item advantages__list-item--ecology">Экологически чистые&nbsp;материалы</li>
-        <li class="advantages__list-item advantages__list-item--style">Скандинавский стиль по&nbsp;российской цене</li>
-        <li class="advantages__list-item advantages__list-item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+        <li class="advantages__list-item advantages__list-item--ecology">Экологически чистые материалы</li>
+        <li class="advantages__list-item advantages__list-item--style">Скандинавский стиль по российской цене</li>
+        <li class="advantages__list-item advantages__list-item--likes">Увеличивает лайки на фотографиях</li>
         <li class="advantages__list-item advantages__list-item--handmade">Связано вручную с
-          любовью&nbsp;и&nbsp;умилением</li>
+          любовью и умилением</li>
         <li class="advantages__list-item advantages__list-item--support">Поддержка отечественного производителя</li>
-        <li class="advantages__list-item advantages__list-item--gift">Поставляется в подарочной&nbsp;упаковке</li>
+        <li class="advantages__list-item advantages__list-item--gift">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
 
+    <section class="reviews">
+      <h2 class="reviews__title section-title">Отзывы</h2>
+      <blockquote class="reviews__content">
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+          лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+          фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <cite class="reviews__author">
+          <span class="reviews__author-name">Анастасия Красильникова</span>
+          <a class="reviews__author-email" href="mailto:misssssiskras@gmail.com">@misssssiskras</a>
+        </cite>
+      </blockquote>
+      <div class="reviews__navigation">
+        <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад"></button>
+        <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперёд"></button>
+      </div>
+      <a class="reviews__button button" href="#">Написать</a>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <dl class="contacts__list">
+        <dt class="contacts__list-term">e-mail:</dt>
+        <dd class="contacts__list-description"><a class="mail-link"
+            href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+        <dt class="contacts__list-term">адрес:</dt>
+        <dd class="contacts__list-description">
+          г. Санкт-Петербург,<br>
+          ул. Большая<br>
+          Конюшенная,<br>
+          д. 19/8, офис 101</dd>
+      </dl>
+      </div>
+      <div class="contacts__map map">
+        <div class="map__marker"></div>
+      </div>
+      <a class="contacts__button button" href="#">Напишите нам</a>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -118,6 +155,24 @@
     </p>
   </footer>
 
+  <section class="modal-overlay">
+    <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="form-cart__title">Добавить в корзину</h2>
+      <fieldset class="form-cart__fieldset">
+        <legend class="form-cart__legend">Выберите размер:</legend>
+        <div class="form-cart__wrapper">
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-s" name="size" value="1" checked>
+          <label class="form-cart__label" for="size-s">S</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-m" name="size" value="2">
+          <label class="form-cart__label" for="size-m">M</label>
+          <input class="form-cart__radio visually-hidden" type="radio" id="size-l" name="size" value="3">
+          <label class="form-cart__label" for="size-l">L</label>
+        </div>
+      </fieldset>
+      <button class="form-cart__button button button--green" type="submit">Добавить</button>
+    </form>
+  </section>
+  <script></script>
 </body>
 
 </html>
