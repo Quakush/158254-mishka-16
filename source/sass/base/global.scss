@@ -8,12 +8,19 @@ html {
   box-sizing: inherit;
 }
 
-body {
+* {
   margin: 0;
-  font-family: $font-text;
-  font-size: 15px;
-  line-height: 30px;
-  color: $color-text;
+  padding: 0;
+}
+
+
+body {
+  min-width: 320px;
+  font-family: $font-title;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-title;
+  background-color: $bg-color;
 }
 
 img {
@@ -34,7 +41,19 @@ a {
   margin: -1px;
 }
 
-.title,
-.text {
-  margin: 0;
+.section-title {
+  font-family: $font-title;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-title;
+}
+
+.wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.wrapper-body {
+  width: 320px;
+  margin: 0 auto;
 }
