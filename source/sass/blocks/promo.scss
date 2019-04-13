@@ -28,10 +28,18 @@
 
   &--interior {
     background-color: #63d1bb;
+
+    svg path {
+      fill: #3bb09d;
+    }
   }
 
   &--toy {
     background-color: #56c3b2;
+
+    svg path {
+      fill: #35a999;
+    }
   }
 }
 
