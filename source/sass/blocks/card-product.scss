@@ -1,0 +1,35 @@
+.card-product {
+  &__link {
+    display: block;
+    padding: 30px 28px 20px;
+    font-size: 17px;
+    line-height: 24px;
+    color: $color-title;
+  }
+
+  &__description {
+    padding-left: 28px;
+    font-family: $font-text;
+    font-size: 13px;
+    line-height: 30px;
+    color: $color-text;
+  }
+
+  &__price {
+    padding: 50px 28px;
+  }
+
+  &__cart-link {
+    path {
+      fill: #d3d2d2;
+    }
+
+    &:hover path {
+      fill: #46c1ae;
+    }
+
+    &:active path {
+      opacity: 0.2;
+    }
+  }
+}
