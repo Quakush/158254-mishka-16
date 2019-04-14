@@ -18,6 +18,16 @@
 
 .promo-menu {
   list-style: none;
+
+  &__text {
+    display: block;
+    width: 130px;
+    padding: 30px;
+  }
+
+  &__pic {
+    opacity: 0.2;
+  }
 }
 
 .promo-menu__link {
@@ -28,23 +38,9 @@
 
   &--interior {
     background-color: #63d1bb;
-
-    svg path {
-      fill: #3bb09d;
-    }
   }
 
   &--toy {
     background-color: #56c3b2;
-
-    svg path {
-      fill: #35a999;
-    }
   }
-}
-
-.promo-menu__text {
-  display: block;
-  width: 130px;
-  padding: 30px;
 }

@@ -5,7 +5,23 @@
   line-height: 18px;
   color: $color-title;
 
-  svg path {
+  &:hover {
+    .copyright__pic {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.copyright__pic {
+  display: block;
+  opacity: 0.7;
+
+  path {
     fill: #63d1bb;
   }
 }
+

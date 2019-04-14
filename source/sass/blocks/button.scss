@@ -8,4 +8,13 @@
   color: $color-text;
   text-align: center;
   border: 2px solid $color-text;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #7c7c7c;
+  }
 }
