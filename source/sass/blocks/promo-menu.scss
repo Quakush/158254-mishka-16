@@ -1,0 +1,28 @@
+.promo-menu {
+  list-style: none;
+
+  &__text {
+    display: block;
+    width: 130px;
+    padding: 30px;
+  }
+
+  &__pic {
+    opacity: 0.2;
+  }
+}
+
+.promo-menu__link {
+  display: block;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toy {
+    background-color: #56c3b2;
+  }
+}

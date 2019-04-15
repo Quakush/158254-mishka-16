@@ -1,0 +1,26 @@
+.copyright__link {
+  display: block;
+  padding: 30px 0;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-title;
+
+  &:hover {
+    .copyright__pic {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.copyright__pic {
+  display: block;
+  opacity: 0.7;
+
+  path {
+    fill: #63d1bb;
+  }
+}

@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-width: 320px;
+  font-family: $font-title;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-title;
+  background-color: $bg-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.section-title {
+  font-family: $font-title;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-title;
+}
+
+.wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.wrapper-body {
+  width: 320px;
+  margin: 0 auto;
+}

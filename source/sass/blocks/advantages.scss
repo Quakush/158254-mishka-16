@@ -1,0 +1,38 @@
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__list-item {
+  span {
+    display: block;
+    padding: 35px 0 15px;
+  }
+
+  svg path {
+    fill: #63d1bb;
+  }
+
+  &--ecology {
+    padding-right: 85px;
+  }
+
+  &--style {
+    padding-right: 55px;
+  }
+
+  &--likes {
+    padding-right: 75px;
+  }
+
+  &--handmade {
+    padding-right: 50px;
+  }
+
+  &--support {
+    padding-right: 0;
+  }
+
+  &--gift {
+    padding-right: 60px;
+  }
+}
