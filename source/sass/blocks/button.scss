@@ -1,5 +1,6 @@
 .button {
   display: block;
+  width: 100%;
   padding: 15px 0;
   font-family: $font-title;
   font-size: 17px;
@@ -16,5 +17,11 @@
 
   &:active {
     color: #7c7c7c;
+  }
+
+  &--form {
+    border: none;
+    color: #ffffff;
+    background-color: $mark-color;
   }
 }
