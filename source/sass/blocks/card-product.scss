@@ -1,4 +1,6 @@
 .card-product {
+  margin-bottom: 30px;
+
   &__link {
     display: block;
     padding: 30px 28px 20px;
@@ -16,7 +18,7 @@
   }
 
   &__price {
-    padding: 50px 28px;
+    padding: 50px 28px 20px;
   }
 
   &__cart-link {
