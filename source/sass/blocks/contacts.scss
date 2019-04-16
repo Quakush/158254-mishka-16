@@ -20,5 +20,14 @@
     display: block;
     color: $color-text;
     border-bottom: 2px solid $mark-color;
+
+    &:hover {
+      color: $mark-color;
+    }
+
+    &:active {
+      color: $mark-color;
+      opacity: 0.2;
+    }
   }
 }
