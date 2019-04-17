@@ -1,0 +1,39 @@
+.reviews {
+  padding-top: 60px;
+
+  &__text {
+    padding: 35px 0;
+    font-family: $font-text;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-text;
+  }
+
+  &__author-name {
+    font-style: normal;
+  }
+
+  &__author-email {
+    display: block;
+    padding: 15px 0;
+    font-family: $font-text;
+    color: $color-text;
+    font-style: normal;
+  }
+
+  &__nav-button {
+    width: 130px;
+    height: 110px;
+    background-color: #ffffff;
+    border: none;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.2;
+      outline: none;
+    }
+  }
+}

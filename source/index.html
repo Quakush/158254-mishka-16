@@ -225,8 +225,22 @@
           </cite>
         </blockquote>
         <div class="reviews__navigation">
-          <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад"></button>
-          <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперёд"></button>
+          <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px"
+              viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <polygon
+                points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 " />
+            </svg>
+          </button>
+          <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Вперёд">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px"
+              viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+              <polygon
+                points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 " />
+            </svg>
+          </button>
         </div>
         <a class="reviews__button button" href="#">Написать</a>
       </div>
@@ -235,19 +249,18 @@
     <section class="contacts">
       <div class="wrapper">
         <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__list">
-          <dt class="contacts__list-term">e-mail:</dt>
-          <dd class="contacts__list-description"><a class="mail-link"
-              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-          <dt class="contacts__list-term">адрес:</dt>
-          <dd class="contacts__list-description">
+        <div class="contacts__list">
+          <p class="contacts__list-term">e-mail:</p>
+          <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <p class="contacts__list-term">адрес:</p>
+          <p class="contacts__list-description">
             г. Санкт-Петербург,<br>
             ул. Большая<br>
             Конюшенная,<br>
             д. 19/8, офис 101</dd>
-        </dl>
+        </div>
       </div>
-      <div class="contacts__map map">
+      <div class="contacts__map map wrapper-body">
         <div class="map__marker"></div>
       </div>
       <div class="wrapper">
@@ -319,21 +332,17 @@
     </div>
   </footer>
 
-  <section class="modal-overlay">
-    <div class="wrapper">
-      <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
-        <h2 class="form-cart__title">Добавить в корзину</h2>
-        <fieldset class="form-cart__fieldset">
-          <legend class="form-cart__legend">Выберите размер:</legend>
-          <div class="form-cart__wrapper">
-            <button class="form-cart__button" type="button">S</button>
-            <button class="form-cart__button" type="button">M</button>
-            <button class="form-cart__button" type="button">L</button>
-          </div>
-        </fieldset>
-        <button class="form-cart__button button button--green" type="submit">Добавить</button>
-      </form>
-    </div>
+  <section class="modal-overlay wrapper">
+    <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="form-cart__title">Добавить в корзину</h2>
+      <fieldset class="form-cart__fieldset">
+        <legend class="form-cart__legend">Выберите размер:</legend>
+        <button class="form-cart__button form-cart__button--active" type="button">S</button>
+        <button class="form-cart__button" type="button">M</button>
+        <button class="form-cart__button" type="button">L</button>
+      </fieldset>
+      <button class="button button--form" type="submit">Добавить</button>
+    </form>
   </section>
   <script></script>
 </body>

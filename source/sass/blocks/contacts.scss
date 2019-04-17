@@ -1,0 +1,33 @@
+.contacts {
+  padding-top: 75px;
+
+  &__title {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: $color-text;
+  }
+
+  &__list {
+    padding: 10px 0 45px;
+    font-family: $font-text;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-text;
+  }
+
+  &__list-link {
+    display: block;
+    color: $color-text;
+    border-bottom: 2px solid $mark-color;
+
+    &:hover {
+      color: $mark-color;
+    }
+
+    &:active {
+      color: $mark-color;
+      opacity: 0.2;
+    }
+  }
+}

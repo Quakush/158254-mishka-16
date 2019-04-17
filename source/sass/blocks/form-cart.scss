@@ -1,0 +1,38 @@
+.form-cart {
+  padding: 40px 0 25px;
+
+  &__title {
+    padding: 15px 50px;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__legend {
+    padding: 10px 0;
+    font-family: $font-text;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-text;
+    text-align: center;
+  }
+
+  &__button {
+    display: block;
+    width: 86px;
+    height: 50px;
+    font-size: 17px;
+    line-height: 16px;
+    border: none;
+    background-color: #ffffff;
+
+    &--active {
+      border: 2px solid $mark-color;
+    }
+  }
+}

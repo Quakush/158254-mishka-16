@@ -1,0 +1,9 @@
+.table-description {
+  margin-bottom: 20px;
+
+  &__cell {
+    padding-right: 25px;
+    font-family: $font-text;
+    font-size: 15px;
+  }
+}
