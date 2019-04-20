@@ -4,3 +4,11 @@
   text-align: center;
   vertical-align: middle;
 }
+
+@media (min-width: $tablet-width) {
+  .main-logo {
+    width: 334px;
+    text-align: left;
+    order: 0;
+  }
+}

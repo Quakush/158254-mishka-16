@@ -27,3 +27,10 @@
     opacity: 0.2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .site-navigation {
+    width: 334px;
+    order: 2;
+  }
+}

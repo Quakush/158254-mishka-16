@@ -1,4 +1,27 @@
 .main-nav {
   width: 100%;
   background-color: $bg-color;
+
+  &__text {
+    display: none;
+    font-family: $font-text;
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__text {
+      display: block;
+      width: 334px;
+      text-align: right;
+      order: 3;
+    }
+  }
 }
