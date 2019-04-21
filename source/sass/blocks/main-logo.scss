@@ -1,14 +1,10 @@
 .main-logo {
-  display: inline-block;
-  padding: 20px 65px 20px 75px;
-  text-align: center;
-  vertical-align: middle;
+  padding: 20px 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .main-logo {
     width: 334px;
-    text-align: left;
     order: 0;
   }
 }

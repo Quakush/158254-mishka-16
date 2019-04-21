@@ -26,3 +26,18 @@
     background-color: #56c3b2;
   }
 }
+
+@media (min-width: 768px) {
+  .promo-menu {
+    display: flex;
+
+    &__item {
+      width: 384px;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

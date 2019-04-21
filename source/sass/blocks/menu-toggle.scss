@@ -1,8 +1,8 @@
 .menu-toggle {
-  display: inline-block;
+  position: absolute;
+  display: block;
   width: 20px;
   height: 20px;
-  vertical-align: middle;
 }
 
 @media (min-width: $tablet-width) {

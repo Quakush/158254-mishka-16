@@ -1,5 +1,9 @@
-.advantages__list {
-  list-style: none;
+.advantages {
+  padding: 30px 0;
+
+  &__list {
+    list-style: none;
+  }
 }
 
 .advantages__list-item {
@@ -34,5 +38,40 @@
 
   &--gift {
     padding-right: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+
+      &-item {
+        width: 334px;
+
+        &--ecology {
+          order: 0;
+        }
+
+        &--style {
+          order: 2;
+        }
+
+        &--likes {
+          order: 4;
+        }
+
+        &--handmade {
+          order: 1;
+        }
+
+        &--support {
+          order: 3;
+        }
+
+        &--gift {
+          order: 5;
+        }
+    }
   }
 }

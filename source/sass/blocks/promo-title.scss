@@ -5,3 +5,11 @@
   color: $color-title;
   text-align: center;
 }
+
+@media (min-width: 768px) {
+  .promo-title {
+    padding: 190px 0 305px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}

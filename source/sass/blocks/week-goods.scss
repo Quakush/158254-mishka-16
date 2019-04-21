@@ -1,5 +1,7 @@
 .week-goods {
+  margin: 0 auto;
   padding-top: 30px;
+  width: 260px;
 
   &__mark {
     font-size: 17px;
@@ -12,6 +14,7 @@
     padding: 25px 0;
     font-family: $font-text;
     font-size: 15px;
+    line-height: 24px;
   }
 
   &__price {
@@ -30,5 +33,31 @@
     padding-right: 25px;
     font-family: $font-text;
     font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .week-goods {
+    width: 668px;
+
+    &__mark {
+      line-height: 17px;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__description {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__wrapper {
+      width: 384px;
+      padding-right: 45px;
+    }
   }
 }
