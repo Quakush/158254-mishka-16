@@ -56,8 +56,15 @@
     }
 
     &__wrapper {
-      width: 384px;
-      padding-right: 45px;
+      position: relative;
+      width: 290px;
+    }
+
+    &__image {
+      position: absolute;
+      width: 334px;
+      top: 0;
+      left: 334px;
     }
   }
 }
