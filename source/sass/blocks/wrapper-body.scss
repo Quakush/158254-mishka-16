@@ -8,3 +8,9 @@
   width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .wrapper-body {
+    width: 1150px;
+  }
+}

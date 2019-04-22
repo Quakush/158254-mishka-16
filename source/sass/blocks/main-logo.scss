@@ -8,3 +8,11 @@
     order: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
