@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .week-goods {
     width: 668px;
 
@@ -65,6 +65,19 @@
       width: 334px;
       top: 0;
       left: 334px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-goods {
+
+    &__title {
+      order: 1;
+    }
+
+    &__mark {
+      order: 0;
     }
   }
 }

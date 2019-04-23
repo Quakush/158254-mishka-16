@@ -27,17 +27,25 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo-menu {
-    display: flex;
 
     &__item {
-      width: 384px;
+      width: 334px;
     }
 
     &__link {
       font-size: 20px;
       line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-menu {
+
+    &__item {
+      width: 525px;
     }
   }
 }

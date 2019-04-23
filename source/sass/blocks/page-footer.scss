@@ -6,7 +6,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-footer {
 
     &__logo {
@@ -19,6 +19,15 @@
       margin: 0 auto;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+
+    &__wrapper {
+      width: 1050px;
     }
   }
 }

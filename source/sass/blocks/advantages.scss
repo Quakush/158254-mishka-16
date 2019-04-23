@@ -41,7 +41,12 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
+  .advantages__title {
+      margin: 0 auto;
+      width: 700px;
+  }
+
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -50,18 +55,22 @@
         width: 334px;
 
         &--ecology {
+          padding-right: 140px;
           order: 0;
         }
 
         &--style {
+          padding-right: 110px;
           order: 2;
         }
 
         &--likes {
+          padding-right: 130px;
           order: 4;
         }
 
         &--handmade {
+          padding-right: 85px;
           order: 1;
         }
 
@@ -70,7 +79,43 @@
         }
 
         &--gift {
+          padding-right: 95px;
           order: 5;
+        }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    margin: 0 auto;
+    width: 700px;
+
+      &-item {
+        width: 350px;
+
+        &--ecology {
+          padding-right: 156px;
+        }
+
+        &--style {
+          padding-right: 126px;
+        }
+
+        &--likes {
+          padding-right: 146px;
+        }
+
+        &--handmade {
+          padding-right: 101px;
+        }
+
+        &--support {
+          padding-right: 16px;
+        }
+
+        &--gift {
+          padding-right: 111px;
         }
     }
   }

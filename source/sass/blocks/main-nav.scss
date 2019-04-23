@@ -13,6 +13,14 @@
     line-height: 24px;
     color: $color-text;
   }
+
+  &__toggle {
+    position: absolute;
+  }
+
+  &__special-list {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +34,56 @@
       width: 334px;
       text-align: right;
       order: 3;
+    }
+
+    &__logo {
+      width: 334px;
+    order: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__user-list {
+      width: 334px;
+      order: 1;
+    }
+
+    &__site-list {
+      width: 334px;
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+
+    &__site-list {
+      width: 525px;
+      order: 0;
+    }
+
+    &__user-list {
+      width: 525px;
+      order: 1;
+    }
+
+    &__special-list {
+      display: block;
+      width: 525px;
+      order: 2;
+    }
+
+    &__text {
+      width: 525px;
     }
   }
 }
