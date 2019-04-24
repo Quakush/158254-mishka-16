@@ -6,7 +6,7 @@
 
 .user-navigation__link {
   display: block;
-  padding: 25px 35px;
+  padding: 25px 0;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
@@ -25,5 +25,26 @@
 
   &:active {
     opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-navigation {
+    display: flex;
+    justify-content: flex-end;
+
+    &__link {
+      width: 167px;
+    }
+
+    &__link--search {
+      width: 80px;
+      font-size: 0;
+    }
+
+    &__link--cart {
+      width: 264px;
+      text-align: right;
+    }
   }
 }

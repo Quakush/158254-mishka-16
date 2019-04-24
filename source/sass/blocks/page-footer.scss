@@ -1,1 +1,31 @@
-/* empty*/
+.page-footer {
+  padding: 30px 0;
+
+  &__logo {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    &__logo {
+      display: block;
+    }
+
+    &__wrapper {
+      display: flex;
+      width: 668px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    &__wrapper {
+      width: 1050px;
+    }
+  }
+}

@@ -1,16 +1,22 @@
 .social-links {
+  display: flex;
+  justify-content: center;
   padding: 30px 0;
   list-style: none;
-}
 
-.social-links__link {
-  display: block;
-
-  &:hover path {
-    fill: #46c1ae;
+  &__item {
+    margin-right: 40px;
   }
 
-  &:active {
-    opacity: 0.3;
+  &__link {
+    display: block;
+
+    &:hover path {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

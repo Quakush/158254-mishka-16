@@ -6,7 +6,7 @@
 
 .site-navigation__link {
   display: block;
-  padding: 25px 35px;
+  padding: 25px 0;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
@@ -25,5 +25,17 @@
 
   &:active {
     opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+      width: 167px;
+      font-size: 15px;
+    }
   }
 }

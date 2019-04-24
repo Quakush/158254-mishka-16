@@ -1,0 +1,16 @@
+.wrapper-body {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .wrapper-body {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper-body {
+    width: 1150px;
+  }
+}

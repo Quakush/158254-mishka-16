@@ -2,14 +2,18 @@
 @import "base/fonts.scss";
 @import "base/variables.scss";
 @import "base/global.scss";
+@import "blocks/main-page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-title.scss";
+@import "blocks/catalog.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/button.scss";
+@import "blocks/menu-toggle.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/main-logo.scss";
 @import "blocks/site-navigation.scss";
 @import "blocks/user-navigation.scss";
+@import "blocks/special-list";
 @import "blocks/promo.scss";
 @import "blocks/promo-menu.scss";
 @import "blocks/promo-title.scss";
@@ -27,3 +31,5 @@
 @import "blocks/form-cart.scss";
 @import "blocks/video.scss";
 @import "blocks/form-feedback.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/wrapper-body.scss";

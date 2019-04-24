@@ -1,6 +1,4 @@
 .card-product {
-  margin-bottom: 30px;
-
   &__link {
     display: block;
     padding: 30px 28px 20px;
@@ -9,7 +7,11 @@
     color: $color-title;
   }
 
-  &__description {
+  &__link-image {
+    display: block;
+  }
+
+  &__title {
     padding-left: 28px;
     font-family: $font-text;
     font-size: 13px;
@@ -33,5 +35,17 @@
     &:active path {
       opacity: 0.2;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .card-product {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card-product {
+    display: block;
   }
 }

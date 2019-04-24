@@ -1,0 +1,13 @@
+.catalog {
+  &__card-product {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

@@ -4,19 +4,20 @@
   &__text {
     display: block;
     width: 130px;
-    padding: 30px;
+    font-size: 19px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: left;
   }
 
-  &__pic {
+  svg {
     opacity: 0.2;
   }
 }
 
 .promo-menu__link {
-  display: block;
-  font-size: 19px;
-  line-height: 24px;
-  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
 
   &--interior {
     background-color: #63d1bb;
@@ -24,5 +25,35 @@
 
   &--toy {
     background-color: #56c3b2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-menu {
+    &__link {
+      width: 334px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+      width: 167px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-menu {
+    &__text {
+      width: 175px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-menu {
+    &__link {
+      width: 525px;
+    }
   }
 }
