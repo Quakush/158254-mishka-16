@@ -35,4 +35,41 @@
       border: 2px solid $mark-color;
     }
   }
+
+  &__submit {
+    border: none;
+    color: #ffffff;
+    background-color: $mark-color;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-cart {
+    &__button {
+      width: 112px;
+    }
+
+    &__submit {
+      width: 340px;
+      margin: 30px auto;
+    }
+
+    &__button-wrapper {
+      width: 340px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-cart {
+    &__button-wrapper {
+      width: 350px;
+    }
+  }
 }
