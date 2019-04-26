@@ -1,12 +1,14 @@
 .video {
   &__title {
-    padding: 25px 25px 25px 90px;
+    display: flex;
+    padding: 25px 25px 25px 10px;
     font-size: 17px;
     line-height: 24px;
   }
 
   &__icon {
-    display: block;
+    display: inline-block;
+    margin-right: 30px;
   }
 
   &__icon path {
@@ -19,7 +21,14 @@
     background: url("../../img/video-mobile@1x.jpg") no-repeat 0 0;
   }
 
+  &__content-wrapper {
+    position: relative;
+  }
+
   &__play-button {
+    position: absolute;
+    top: 25%;
+    left: 30%;
     background-color: transparent;
     border: none;
   }
@@ -30,5 +39,59 @@
     font-size: 13px;
     line-height: 24px;
     color: $color-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      order: 1;
+    }
+
+    &__content-wrapper {
+      order: 0;
+    }
+
+    &__description {
+      padding-top: 0;
+      order: 2;
+    }
+
+    &__button {
+      margin: 0 auto;
+      width: 580px;
+      order: 3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    position: relative;
+    display: block;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      width: 165px;
+      margin-left: 755px;
+    }
+
+    &__content-wrapper {
+      position: absolute;
+      width: 700px;
+    }
+
+    &__description {
+      padding-left: 755px;
+    }
+
+    &__button {
+      margin-left: 755px;
+      width: 225px;
+    }
   }
 }

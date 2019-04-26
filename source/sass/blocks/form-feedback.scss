@@ -7,11 +7,12 @@
   }
 
   &__fieldset {
+    padding: 20px 0;
     border: none;
   }
 
   &__legend {
-    display: block;
+    width: 100%;
     font-size: 17px;
     line-height: 16px;
     color: $mark-color;
@@ -65,5 +66,61 @@
 
   &__button {
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-feedback {
+    &__legend {
+      width: 167px;
+    }
+
+    &__input-wrapper {
+      width: 250px;
+    }
+
+    &__content-wrapper {
+      width: 500px;
+
+      &--color {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &__fieldset-wrapper {
+      display: flex;
+
+      &--submit {
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &__button {
+      width: 230px;
+      order: 0;
+    }
+
+    &__notification {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-feedback {
+    &__input-wrapper {
+      width: 233px;
+    }
+
+    &__content-wrapper {
+      width: 700px;
+    }
+
+    &__fieldset-wrapper--submit {
+      margin-left: 170px;
+      width: 700px;
+    }
   }
 }
