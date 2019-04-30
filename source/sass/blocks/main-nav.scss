@@ -16,8 +16,8 @@
 
   &__toggle {
     position: absolute;
-    top: 25px;
-    right: 20px;
+    top: 26px;
+    right: 0px;
   }
 
   &__special-list {
@@ -25,7 +25,7 @@
   }
 }
 
-/*@media (max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__site-list,
   .main-nav--closed .main-nav__user-list {
     display: none;
@@ -35,7 +35,19 @@
   .main-nav--opened .main-nav__user-list {
     display: block;
   }
-}*/
+
+  .main-nav--closed .main-nav__toggle {
+    background-image: url("../../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    background-image: url("../../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .main-nav {

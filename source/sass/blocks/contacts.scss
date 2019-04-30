@@ -1,15 +1,15 @@
 .contacts {
-  padding-top: 75px;
+  padding-top: 70px;
 
   &__title {
-    padding: 15px 0;
+    padding: 17px 0 15px;
     font-size: 18px;
     line-height: 30px;
     color: $color-text;
   }
 
   &__list {
-    padding: 10px 0 45px;
+    padding: 10px 0 11px;
     font-family: $font-text;
     font-size: 15px;
     line-height: 30px;
@@ -17,6 +17,7 @@
   }
 
   &__row {
+    margin-bottom: 28px;
     display: flex;
     width: 100%;
   }
@@ -46,7 +47,7 @@
   }
 
   &__button {
-    margin-top: 50px;
+    margin-top: 37px;
   }
 }
 

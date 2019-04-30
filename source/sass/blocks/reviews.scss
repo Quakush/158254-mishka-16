@@ -2,7 +2,7 @@
   padding-top: 60px;
 
   &__text {
-    padding: 35px 0;
+    padding: 22px 0 29px;
     font-family: $font-text;
     font-size: 15px;
     line-height: 30px;
@@ -15,7 +15,7 @@
 
   &__author-email {
     display: block;
-    padding: 15px 0;
+    padding: 12px 0 15px;
     font-family: $font-text;
     color: $color-text;
     font-style: normal;
@@ -27,7 +27,7 @@
 
   &__nav-button {
     width: 130px;
-    height: 110px;
+    height: 107px;
     background-color: #ffffff;
     border: none;
 

@@ -3,6 +3,7 @@
 
   &__text {
     display: block;
+    padding: 23px 0;
     width: 130px;
     font-size: 19px;
     line-height: 24px;
@@ -18,6 +19,7 @@
 .promo-menu__link {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   &--interior {
     background-color: #63d1bb;
