@@ -16,12 +16,26 @@
 
   &__toggle {
     position: absolute;
+    top: 25px;
+    right: 20px;
   }
 
   &__special-list {
     display: none;
   }
 }
+
+/*@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__site-list,
+  .main-nav--closed .main-nav__user-list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__site-list,
+  .main-nav--opened .main-nav__user-list {
+    display: block;
+  }
+}*/
 
 @media (min-width: $tablet-width) {
   .main-nav {
