@@ -46,16 +46,24 @@
 
 @media (min-width: $tablet-width) {
   .week-goods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 668px;
+    padding-top: 33px;
 
     &__mark {
+      width: 125px;
       line-height: 17px;
+      text-align: center;
     }
 
     &__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 668px;
     }
 
     &__description {
@@ -64,12 +72,11 @@
     }
 
     &__wrapper {
-      position: relative;
+      padding-top: 20px;
       width: 290px;
     }
 
     &__image {
-      position: absolute;
       width: 334px;
       top: 0;
       left: 334px;

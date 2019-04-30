@@ -51,6 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    padding-top: 5px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;

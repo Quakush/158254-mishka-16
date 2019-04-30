@@ -34,12 +34,16 @@
   .promo-menu {
     &__link {
       width: 334px;
-      font-size: 20px;
-      line-height: 30px;
+      padding-bottom: 31px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: bottom;
     }
 
     &__text {
       width: 167px;
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }
