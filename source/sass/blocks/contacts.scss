@@ -1,5 +1,6 @@
 .contacts {
-  padding-top: 70px;
+  padding-top: 67px;
+  padding-bottom: 37px;
 
   &__title {
     padding: 17px 0 15px;
@@ -49,27 +50,49 @@
   &__button {
     margin-top: 37px;
   }
+
+  &__icon {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
+    padding-top: 52px;
+    padding-bottom: 5px;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
     &__list {
       display: flex;
       justify-content: flex-start;
+      padding: 32px 0 29px;
+      font-size: 17px;
     }
 
-    &__row {
-      margin-right: 50px;
-      width: 334px;
+    &__list-link {
+      width: 205px;
+      align-self: flex-start;
+      border-color: red;
     }
 
     &__list-description {
-      width: 100%;
+      width: 259px;
+    }
+
+    &__row {
+      width: 334px;
     }
 
     &__button {
       width: 225px;
-      margin: 60px auto;
+      margin: 55px auto 50px;
     }
   }
 }

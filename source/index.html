@@ -226,17 +226,15 @@
       </div>
     </section>
 
-    <section class="reviews wrapper">
+    <section class="reviews">
         <h2 class="reviews__title section-title">Отзывы</h2>
-        <blockquote class="reviews__content">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author">
+          <div class="reviews__author">
             <span class="reviews__author-name">Анастасия Красильникова</span>
             <a class="reviews__author-email" href="mailto:misssssiskras@gmail.com">@misssssiskras</a>
-          </cite>
-        </blockquote>
+          </div>
         <div class="reviews__navigation">
           <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -258,8 +256,26 @@
         <a class="reviews__button button" href="#">Написать</a>
     </section>
 
-    <section class="contacts wrapper">
-        <h2 class="contacts__title">Контакты</h2>
+    <section class="contacts">
+      <div class="wrapper">
+        <h2 class="contacts__title">Контакты
+          <span class="contacts__icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.68px" height="81.691px" viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
+            <g id="miu">
+              <g id="Artboard-1" transform="translate(-755.000000, -443.000000)">
+                <g id="slice" transform="translate(215.000000, 119.000000)">
+                </g>
+                <g id="editor-flag-triangle-notification-glyph">
+                  <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+                </g>
+              </g>
+            </g>
+            <g>
+              <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
+            </g>
+          </svg>
+          </span>
+        </h2>
         <div class="contacts__list">
           <div class="contacts__row">
             <p class="contacts__list-term">e-mail:</p>
@@ -274,10 +290,13 @@
             д. 19/8, офис 101</p>
           </div>
         </div>
+      </div>
       <div class="contacts__map map wrapper-body">
         <div class="map__marker"></div>
       </div>
-      <a class="contacts__button button" href="#">Напишите нам</a>
+      <div class="wrapper">
+        <a class="contacts__button button" href="#">Напишите нам</a>
+      </div>
     </section>
   </main>
 
@@ -296,7 +315,7 @@
         </g>
       </svg>
       </a>
-      <ul class="social-links">
+      <ul class="page-footer__social social-links">
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.instagram.com" aria-label="Instagram">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +362,7 @@
           </a>
         </li>
       </ul>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <a class="page-footer__copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"

@@ -1,9 +1,8 @@
 .social-links {
   display: flex;
-  justify-content: center;
+  padding: 26px 0 25px;
+  justify-content: space-between;
   align-items: flex-end;
-  margin-left: 35px;
-  padding: 26px 27px;
   list-style: none;
 
   &__item {

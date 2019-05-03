@@ -1,6 +1,6 @@
 .week-goods {
   margin: 0 auto;
-  padding-top: 9px;
+  padding-top: 27px;
   width: 260px;
 
   &__title {
@@ -22,11 +22,11 @@
   }
 
   &__image {
-    margin-top: 29px;
+    margin-top: 30px;
   }
 
   &__price {
-    padding: 25px 0;
+    padding: 23px 0;
     font-size: 17px;
     line-height: 24px;
     text-align: center;
@@ -49,9 +49,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 668px;
-    padding-top: 33px;
+    padding-top: 47px;
 
     &__mark {
       width: 125px;
@@ -67,6 +67,7 @@
     }
 
     &__description {
+      padding: 25px 0 35px;
       font-size: 17px;
       line-height: 30px;
     }
@@ -77,9 +78,20 @@
     }
 
     &__image {
+      padding-top: 23px;
       width: 334px;
       top: 0;
       left: 334px;
+    }
+
+    &__bottom {
+      margin-top: -48px;
+      width: 290px;
+    }
+
+    &__price {
+      margin-bottom: 10px;
+      font-size: 20px;
     }
   }
 }

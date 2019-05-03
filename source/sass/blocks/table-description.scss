@@ -8,3 +8,13 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .table-description {
+    margin-bottom: 0;
+
+    &__cell {
+    padding: 8px 25px 10px 0;
+    }
+  }
+}

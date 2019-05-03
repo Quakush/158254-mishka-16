@@ -1,8 +1,17 @@
 .map {
-  width: 320px;
+  width: 260px;
   height: 457px;
   margin-bottom: 40px;
   background:
     url("../../img/icon-map-pin.svg") no-repeat 55% 40%,
     url("../../img/map-mobile@1x.jpg") no-repeat 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+    background:
+    url("../../img/icon-map-pin.svg") no-repeat 52% 39%,
+    url("../../img/map-tablet@1x.jpg") no-repeat 0 0;
+  }
 }

@@ -1,8 +1,11 @@
 .reviews {
-  padding-top: 60px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 53px;
+  width: 320px;
 
   &__text {
-    padding: 22px 0 29px;
+    padding: 23px 0 30px;
     font-family: $font-text;
     font-size: 15px;
     line-height: 30px;
@@ -15,7 +18,7 @@
 
   &__author-email {
     display: block;
-    padding: 12px 0 15px;
+    padding: 12px 0 32px;
     font-family: $font-text;
     color: $color-text;
     font-style: normal;
@@ -26,10 +29,11 @@
   }
 
   &__nav-button {
+    margin-bottom: 38px;
     width: 130px;
-    height: 107px;
+    height: 52px;
     background-color: #ffffff;
-    border: none;
+    border: 1px solid #eeeeee;
 
     &:hover {
       opacity: 0.5;
@@ -47,23 +51,46 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 78px 48px;
+    width: $tablet-width;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
 
     &__title {
+      width: 334px;
       order: 0;
     }
 
-    &__content {
+    &__author {
+      padding: 16px 3px;
+      width: 334px;
+      order: 3;
+    }
+
+    &__author-name {
+      font-size: 18px;
+    }
+
+    &__text {
+      padding: 44px 0;
+      font-size:  17px;
       order: 2;
     }
 
     &__navigation {
+      margin-top: 18px;
       width: 167px;
-      order: 3;
+      order: 4;
     }
 
     &__button {
-      width: 170px;
+      width: 175px;
       order: 1;
+    }
+
+    &__nav-button {
+      border: none;
     }
   }
 }

@@ -3,7 +3,6 @@
 
   &__text {
     display: block;
-    padding: 23px 0;
     width: 130px;
     font-size: 19px;
     line-height: 24px;
@@ -18,14 +17,16 @@
 
 .promo-menu__link {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   &--interior {
+    padding: 18px 35px 22px 30px;
     background-color: #63d1bb;
   }
 
   &--toy {
+    padding: 20px 30px 24px;
     background-color: #56c3b2;
   }
 }
@@ -34,10 +35,14 @@
   .promo-menu {
     &__link {
       width: 334px;
-      padding-bottom: 31px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-position: bottom;
+
+      &--interior {
+        padding: 27px 36px 28px;
+      }
+
+      &--toy {
+        padding: 27px 34px 30px 37px;
+      }
     }
 
     &__text {
