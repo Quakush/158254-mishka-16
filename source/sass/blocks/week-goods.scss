@@ -38,7 +38,7 @@
   margin-bottom: 20px;
 
   &__cell {
-    padding:  8px 25px 8px 0;
+    padding: 8px 25px 8px 0;
     font-family: $font-text;
     font-size: 15px;
   }
@@ -98,11 +98,21 @@
 
 @media (min-width: $desktop-width) {
   .week-goods {
+    width: 1050px;
+    padding-top: 126px;
+
+    &__header {
+      width: 1050px;
+      justify-content: flex-start;
+    }
+
     &__title {
       order: 1;
     }
 
     &__mark {
+      margin-right: 45px;
+      padding-left: 42px;
       order: 0;
     }
   }

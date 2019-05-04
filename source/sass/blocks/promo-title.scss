@@ -6,10 +6,18 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo-title {
     padding: 155px 0 344px;
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-title {
+    padding: 155px 0 324px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

@@ -3,3 +3,9 @@
     margin-top: -95px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-page {
+    margin-top: -107px;
+  }
+}

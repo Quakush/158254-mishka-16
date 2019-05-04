@@ -17,7 +17,7 @@
   &__toggle {
     position: absolute;
     top: 26px;
-    right: 0px;
+    right: 0;
   }
 
   &__special-list {
@@ -103,7 +103,6 @@
     }
 
     &__special-list {
-      display: block;
       width: 525px;
       order: 2;
     }
