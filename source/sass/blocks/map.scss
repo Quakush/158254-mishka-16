@@ -15,3 +15,12 @@
       url("../../img/map-tablet@1x.jpg") no-repeat 0 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: 525px;
+    background:
+      url("../../img/icon-map-pin.svg") no-repeat 22% 39%,
+      url("../../img/map-desktop@1x.jpg") no-repeat 0 0;
+  }
+}

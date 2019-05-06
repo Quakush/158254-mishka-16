@@ -94,35 +94,56 @@
       width: 225px;
       margin: 55px auto 50px;
     }
+
+    &__icon {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
+    margin: 0 auto;
+    padding-top: 185px;
+    padding-bottom: 65px;
+    width: 1050px;
     display: flex;
-    padding-left: 175px;
-
-    &__list {
-      display: block;
-      width: 350px;
-      padding-top: 170px;
-    }
-
-    &__button {
-      position: absolute;
-      width: 230px;
-      bottom: 0;
-    }
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
 
     &__map {
       width: 525px;
+      margin-top: -54px;
+    }
+
+    &__row {
+      width: 450px;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-left: 175px;
     }
 
     &__title {
-      position: absolute;
-      top: 95px;
-      left: 175px;
+      width: 525px;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 0 85px 0 65px;
+      font-size: 53px;
+      line-height: 57px;
     }
+
+    &__button {
+      margin: 0;
+      margin-left: 175px;
+      margin-top: -90px;
+      width: 230px;
+    }
+  }
+
+  .contacts .wrapper {
+    width: 525px;
   }
 }

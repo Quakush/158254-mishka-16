@@ -170,6 +170,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages .wrapper {
+    width: 700px;
+  }
+
+  .advantages {
+    padding-top: 135px;
+    padding-bottom: 95px;
+  }
+
   .advantages__list {
     margin: 0 auto;
     width: 700px;
@@ -178,15 +187,15 @@
       width: 350px;
 
       &--ecology {
-        padding-right: 156px;
+        padding-right: 146px;
       }
 
       &--style {
-        padding-right: 126px;
+        padding-right: 116px;
       }
 
       &--likes {
-        padding-right: 146px;
+        padding-right: 136px;
       }
 
       &--handmade {

@@ -51,6 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 78px 48px;
     width: $tablet-width;
     background-image: url("../../img/review@1x.jpg");
@@ -97,6 +98,15 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    width: 1050px;
     padding-left: 175px;
+    padding-right: 0;
+    padding-top: 70px;
+
+    &__text {
+      padding-top: 48px;
+      padding-right: 80px;
+      padding-bottom: 28px;
+    }
   }
 }
