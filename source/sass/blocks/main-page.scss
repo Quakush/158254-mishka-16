@@ -1,6 +1,24 @@
+.main-page {
+  &__description {
+    margin: 0 auto;
+    padding-top: 3px;
+    width: 260px;
+    font-family: $font-text;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-page {
     margin-top: -95px;
+
+    &__description {
+      width: $tablet-width;
+      padding: 28px 50px 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 }
 
