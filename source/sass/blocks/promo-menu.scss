@@ -17,13 +17,16 @@
 
 .promo-menu__link {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 
   &--interior {
+    padding: 18px 35px 22px 30px;
     background-color: #63d1bb;
   }
 
   &--toy {
+    padding: 20px 30px 24px;
     background-color: #56c3b2;
   }
 }
@@ -32,12 +35,20 @@
   .promo-menu {
     &__link {
       width: 334px;
-      font-size: 20px;
-      line-height: 30px;
+
+      &--interior {
+        padding: 27px 36px 28px;
+      }
+
+      &--toy {
+        padding: 27px 34px 30px 37px;
+      }
     }
 
     &__text {
       width: 167px;
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 }
@@ -47,13 +58,17 @@
     &__text {
       width: 175px;
     }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .promo-menu {
     &__link {
       width: 525px;
+
+      &--interior {
+        padding: 27px 36px 29px;
+      }
+
+      &--toy {
+        padding: 27px 34px 31px 37px;
+      }
     }
   }
 }

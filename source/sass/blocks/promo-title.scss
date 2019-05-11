@@ -1,15 +1,23 @@
 .promo-title {
-  padding: 90px 0 105px;
+  padding: 72px 0 104px;
   font-size: 27px;
   line-height: 30px;
   color: $color-title;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .promo-title {
-    padding: 190px 0 305px;
+    padding: 155px 0 344px;
     font-size: 43px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-title {
+    padding: 155px 0 324px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

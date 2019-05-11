@@ -2,9 +2,19 @@
   margin-bottom: 20px;
 
   &__cell {
-    padding-right: 25px;
+    padding: 8px 25px 8px 0;
     font-family: $font-text;
     font-size: 15px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .table-description {
+    margin-bottom: 0;
+
+    &__cell {
+      padding: 8px 0 10px 0;
+    }
   }
 }

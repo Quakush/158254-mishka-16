@@ -12,7 +12,7 @@
 
   <header class="page-header">
     <div class="wrapper">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <a class="main-nav__logo main-logo" aria-label="Логотип Мишка">
           <img src="img/logo-mobile.svg" width="86" height="36" alt="логотип Мишка">
         </a>
@@ -111,39 +111,43 @@
           <h2 class="week-goods__title section-title">Вязаные корзинки</h2>
           <p class="week-goods__mark">Товар недели</p>
         </header>
-        <div class="week-goods__wrapper">
-        <p class="week-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
-          трех размерах.</p>
-        <table class="week-goods__table table-description">
-          <tbody>
-            <tr class="table-description__row">
-              <td class="table-description__cell">Цвет:</td>
-              <td class="table-description__cell">«Тиффани»/серый</td>
-            </tr>
-            <tr class="table-description__row">
-              <td class="table-description__cell">Диаметр:</td>
-              <td class="table-description__cell">25 см</td>
-            </tr>
-            <tr class="table-description__row">
-              <td class="table-description__cell">Высота:</td>
-              <td class="table-description__cell">15 см</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="week-goods__image">
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаная корзинка">
+        <div class="week-goods__info">
+          <div class="week-goods__description">
+            <p class="week-goods__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
+             трех размерах.</p>
+            <table class="week-goods__table table-description">
+              <tbody>
+                <tr class="table-description__row">
+                <td class="table-description__cell">Цвет:</td>
+                <td class="table-description__cell">«Тиффани»/серый</td>
+              </tr>
+              <tr class="table-description__row">
+                <td class="table-description__cell">Диаметр:</td>
+               <td class="table-description__cell">25 см</td>
+              </tr>
+              <tr class="table-description__row">
+                <td class="table-description__cell">Высота:</td>
+               <td class="table-description__cell">15 см</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="week-goods__image">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязаная корзинка">
+          </div>
+          <div class="week-goods__bottom">
+            <p class="week-goods__price">Цена: 990 руб.</p>
+            <a class="week-goods__button button" href="order.html">Заказать</a>
+          </div>
         </div>
-        <p class="week-goods__price">Цена: 990 руб.</p>
-        <a class="week-goods__button button" href="order.html">Заказать</a>
-        </div>
-      </section>
+        </section>
 
     <section class="advantages">
       <div class="wrapper">
         <h2 class="advantages__title section-title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item advantages__list-item--ecology">
-            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <span class="advantages__icon--ecology"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.972px" height="37.301px"
                 viewBox="8.014 4.35 31.972 37.301" enable-background="new 8.014 4.35 31.972 37.301"
                 xml:space="preserve">
@@ -152,7 +156,7 @@
               </svg></span>
             Экологически чистые материалы</li>
           <li class="advantages__list-item advantages__list-item--style">
-            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <span class="advantages__icon--style"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.575px" height="27.332px"
                 viewBox="46.212 56.834 46.575 27.332" enable-background="new 46.212 56.834 46.575 27.332"
                 xml:space="preserve">
@@ -163,7 +167,7 @@
               </svg></span>
             Скандинавский стиль по российской цене</li>
           <li class="advantages__list-item advantages__list-item--likes">
-            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <span class="advantages__icon--likes"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="33.05px" height="27.857px"
                 viewBox="47.475 50.071 33.05 27.857" enable-background="new 47.475 50.071 33.05 27.857"
                 xml:space="preserve">
@@ -172,7 +176,7 @@
               </svg></span>
             Увеличивает лайки на фотографиях</li>
           <li class="advantages__list-item advantages__list-item--handmade">
-            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <span class="advantages__icon--handmade"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="34.373px" height="34.373px"
                 viewBox="0 0 34.373 34.373" enable-background="new 0 0 34.373 34.373" xml:space="preserve">
                 <g>
@@ -199,7 +203,7 @@
               </svg></span>
             Связано вручную с любовью и умилением</li>
           <li class="advantages__list-item advantages__list-item--support">
-            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <span class="advantages__icon--support"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54.156px" height="23.183px"
                 viewBox="612.532 500.386 54.156 23.183" enable-background="new 612.532 500.386 54.156 23.183"
                 xml:space="preserve">
@@ -212,7 +216,7 @@
               </svg></span>
             Поддержка отечественного производителя</li>
           <li class="advantages__list-item advantages__list-item--gift">
-            <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            <span class="advantages__icon--gift"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32.666px" height="32.486px"
                 viewBox="239.665 239.757 32.666 32.486" enable-background="new 239.665 239.757 32.666 32.486"
                 xml:space="preserve">
@@ -224,17 +228,15 @@
       </div>
     </section>
 
-    <section class="reviews wrapper">
+    <section class="reviews">
         <h2 class="reviews__title section-title">Отзывы</h2>
-        <blockquote class="reviews__content">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+            лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite class="reviews__author">
+          <div class="reviews__author">
             <span class="reviews__author-name">Анастасия Красильникова</span>
             <a class="reviews__author-email" href="mailto:misssssiskras@gmail.com">@misssssiskras</a>
-          </cite>
-        </blockquote>
+          </div>
         <div class="reviews__navigation">
           <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -256,26 +258,45 @@
         <a class="reviews__button button" href="#">Написать</a>
     </section>
 
-    <section class="contacts wrapper">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__list">
-          <div class="contacts__row">
-            <p class="contacts__list-term">e-mail:</p>
-            <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </div>
-          <div class="contacts__row">
-            <p class="contacts__list-term">адрес:</p>
-            <p class="contacts__list-description">
-            г. Санкт-Петербург,<br>
-            ул. Большая
-            Конюшенная,<br>
-            д. 19/8, офис 101</p>
+    <section class="contacts">
+      <div class="wrapper">
+        <h2 class="contacts__title">Контакты
+          <span class="contacts__icon">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.68px" height="81.691px" viewBox="-11.34 -28.346 46.68 81.691" enable-background="new -11.34 -28.346 46.68 81.691" xml:space="preserve">
+              <g id="miu">
+              <g id="Artboard-1" transform="translate(-755.000000, -443.000000)">
+              <g id="slice" transform="translate(215.000000, 119.000000)">
+              </g>
+              <g id="editor-flag-triangle-notification-glyph">
+                <path fill="#63D1BB" d="M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z"/>
+              </g>
+              </g>
+              </g>
+              <g>
+              <rect x="-11.34" y="-28.346" fill="#231F20" width="3.805" height="81.691"/>
+              </g>
+            </svg>
+          </span>
+        </h2>
+          <div class="contacts__list">
+            <div class="contacts__row">
+              <p class="contacts__list-term">e-mail:</p>
+              <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__row">
+              <p class="contacts__list-term">адрес:</p>
+             <p class="contacts__list-description">
+               г. Санкт-Петербург,<br>
+              ул. Большая
+              Конюшенная,<br>
+              д. 19/8, офис 101</p>
+            </div>
           </div>
         </div>
-      <div class="contacts__map map wrapper-body">
-        <div class="map__marker"></div>
-      </div>
-      <a class="contacts__button button" href="#">Напишите нам</a>
+        <div class="contacts__map map">
+          <div class="map__marker"></div>
+        </div>
+        <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -294,7 +315,7 @@
         </g>
       </svg>
       </a>
-      <ul class="social-links">
+      <ul class="page-footer__social social-links">
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.instagram.com" aria-label="Instagram">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -341,7 +362,7 @@
           </a>
         </li>
       </ul>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <a class="page-footer__copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
@@ -367,7 +388,7 @@
       <button class="form-cart__submit button" type="submit">Добавить</button>
     </form>
   </section>
-  <script></script>
+  <script src="../source/js/menu-toggle.js"></script>
 </body>
 
 </html>

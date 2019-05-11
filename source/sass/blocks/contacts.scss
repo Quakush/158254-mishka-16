@@ -1,15 +1,16 @@
 .contacts {
-  padding-top: 75px;
+  padding-top: 67px;
+  padding-bottom: 37px;
 
   &__title {
-    padding: 15px 0;
+    padding: 17px 0 15px;
     font-size: 18px;
     line-height: 30px;
     color: $color-text;
   }
 
   &__list {
-    padding: 10px 0 45px;
+    padding: 10px 0 11px;
     font-family: $font-text;
     font-size: 15px;
     line-height: 30px;
@@ -17,6 +18,7 @@
   }
 
   &__row {
+    margin-bottom: 28px;
     display: flex;
     width: 100%;
   }
@@ -45,60 +47,109 @@
     width: 185px;
   }
 
+  &__map {
+    margin: 0 auto;
+  }
+
   &__button {
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 37px;
+    width: 260px;
+  }
+
+  &__icon {
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
+    padding-top: 52px;
+    padding-bottom: 5px;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 43px;
+      line-height: 50px;
+    }
+
     &__list {
       display: flex;
       justify-content: flex-start;
+      padding: 32px 0 29px;
+      font-size: 17px;
     }
 
-    &__row {
-      margin-right: 50px;
-      width: 334px;
+    &__list-link {
+      width: 205px;
+      align-self: flex-start;
+      border-color: red;
     }
 
     &__list-description {
-      width: 100%;
+      width: 259px;
+    }
+
+    &__row {
+      width: 334px;
     }
 
     &__button {
       width: 225px;
-      margin: 60px auto;
+      margin: 55px auto 50px;
+    }
+
+    &__icon {
+      display: block;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    position: relative;
+    margin: 0 auto;
+    padding-top: 185px;
+    padding-bottom: 65px;
+    width: 1050px;
     display: flex;
-    padding-left: 175px;
-
-    &__list {
-      display: block;
-      width: 350px;
-      padding-top: 170px;
-    }
-
-    &__button {
-      position: absolute;
-      width: 230px;
-      bottom: 0;
-    }
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
 
     &__map {
       width: 525px;
+      margin-top: -54px;
+    }
+
+    &__row {
+      width: 450px;
+    }
+
+    &__list {
+      flex-direction: column;
+      margin-left: 175px;
     }
 
     &__title {
-      position: absolute;
-      top: 95px;
-      left: 175px;
+      width: 525px;
+      flex-direction: row-reverse;
+      align-items: center;
+      padding: 0 85px 0 65px;
+      font-size: 53px;
+      line-height: 57px;
     }
+
+    &__button {
+      margin: 0;
+      margin-left: 175px;
+      margin-top: -90px;
+      width: 230px;
+    }
+  }
+
+  .contacts .wrapper {
+    width: 525px;
   }
 }

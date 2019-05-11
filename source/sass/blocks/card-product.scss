@@ -1,7 +1,7 @@
 .card-product {
   &__link {
     display: block;
-    padding: 30px 28px 20px;
+    padding: 23px 28px 5px;
     font-size: 17px;
     line-height: 24px;
     color: $color-title;
@@ -20,7 +20,12 @@
   }
 
   &__price {
-    padding: 50px 28px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 28px 20px;
+    font-size: 15px;
+    line-height: 24px;
   }
 
   &__cart-link {

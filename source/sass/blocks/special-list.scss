@@ -7,3 +7,16 @@
     color: $color-title;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .special-list {
+    display: flex;
+    justify-content: flex-start;
+
+    &__link {
+      display: block;
+      padding: 27px 0;
+      width: 218px;
+    }
+  }
+}

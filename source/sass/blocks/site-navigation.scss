@@ -11,16 +11,8 @@
   line-height: 24px;
   color: $color-title;
 
-  path {
-    fill: #d3d2d2;
-  }
-
   &:hover {
     color: #666666;
-
-    path {
-      fill: #80dac8;
-    }
   }
 
   &:active {
@@ -31,11 +23,20 @@
 @media (min-width: $tablet-width) {
   .site-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     &__link {
       width: 167px;
       font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-navigation {
+    &__link {
+      width: 218px;
+      font-size: 17px;
     }
   }
 }

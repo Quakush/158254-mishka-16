@@ -5,3 +5,11 @@
   text-align: center;
   background-color: #f1f1f1;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    padding: 97px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
