@@ -170,6 +170,8 @@
 
   &__notification {
     display: block;
+    width: 260px;
+    margin: 0 auto;
     margin-bottom: 31px;
     margin-top: -14px;
     font-family: $font-text;
@@ -179,6 +181,8 @@
   }
 
   &__button {
+    margin: 0 auto;
+    width: 260px;
     background-color: #ffffff;
   }
 }
@@ -252,11 +256,11 @@
 
     &__legend {
       width: 167px;
-      margin-top: 64px;
+     /* margin-top: 64px;*/
       display: block;
 
       &--email {
-        margin-top: 0;
+        /*margin-top: 0;*/
       }
     }
 
@@ -268,7 +272,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0;
-        padding: 60px 0 15px;
+        padding: 60px 0 12px;
       }
     }
 
@@ -306,7 +310,7 @@
     }
 
     &__column {
-      padding: 21px 0 23px;
+      padding: 21px 0 20px;
     }
 
     &__field {
@@ -316,16 +320,11 @@
       margin: 0;
 
       &--name {
-        margin-bottom: 24px;
+        margin-bottom: 22px;
       }
 
       &--phone {
-        padding-top: 40px;
-        padding-bottom: 0;
-      }
-
-      &--email {
-        padding-top: 0px;
+        padding-top: 36px;
       }
     }
 
@@ -336,6 +335,30 @@
 
     &__icon--email {
       top: 0;
+    }
+
+    &__input-text {
+      padding-left: 20px;
+      padding-top: 10px;
+      font-size: 19px;
+      line-height: 18px;
+
+      &::placeholder {
+        font-size: 19px;
+        line-height: 18px;
+      }
+    }
+
+    &__input-text--contact {
+      margin: 0;
+      padding: 0 0 15px 15px;
+      font-size: 19px;
+      line-height: 18px;
+
+      &::placeholder {
+        font-size: 19px;
+        line-height: 18px;
+      }
     }
   }
 
