@@ -68,6 +68,11 @@
       order: 0;
     }
 
+    &__logo-image {
+      width: 112px;
+      height: 46px;
+    }
+
     &__toggle {
       display: none;
     }
@@ -90,6 +95,11 @@
       position: absolute;
       top: 0;
       left: 50%;
+    }
+
+    &__logo-image {
+      width: 148px;
+      height: 73px;
     }
 
     &__site-list {
