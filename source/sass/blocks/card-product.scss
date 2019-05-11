@@ -1,4 +1,9 @@
 .card-product {
+  &__description {
+    border: 1px solid #ebebeb;
+    border-top: none;
+  }
+
   &__link {
     display: block;
     padding: 23px 28px 5px;
@@ -26,6 +31,7 @@
     padding: 41px 28px 20px;
     font-size: 15px;
     line-height: 24px;
+    border-top: 1px solid #ebebeb;
   }
 
   &__cart-link {
