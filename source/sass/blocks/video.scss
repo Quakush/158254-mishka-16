@@ -4,7 +4,7 @@
   &__title {
     display: flex;
     align-items: center;
-    padding: 25px 0 25px 33px;
+    padding: 24px 0 21px 33px;
     font-size: 17px;
     line-height: 24px;
     border: 1px solid #ebebeb;
@@ -75,12 +75,26 @@
 
 @media (min-width: $tablet-width) {
   .video {
+    padding-bottom:107px;
     display: flex;
     flex-direction: column;
 
     &__title {
+      padding: 29px 0 21px 42px;
+      font-size: 20px;
       order: 1;
       border: none;
+    }
+
+    &__icon {
+      margin-right: 32px;
+    }
+
+    &__description {
+      margin-top: 5px;
+      padding: 28px 40px 34px 42px;
+      font-size: 15px;
+      line-height: 30px;
     }
 
     &__content-wrapper {
@@ -99,7 +113,7 @@
     }
 
     &__play-button {
-      top: 35%;
+      top: 38%;
       left: 40%;
     }
 
@@ -118,19 +132,31 @@
 
 @media (min-width: $desktop-width) {
   .video {
-    position: relative;
-    display: block;
+    padding-top: 5px;
+    padding-bottom: 164px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 
     &__title {
       display: flex;
       flex-direction: column;
-      width: 165px;
-      margin-left: 755px;
+      padding: 7px 0 0 0;
+      width: 228px;
+      margin-left: 760px;
+      margin-top: -423px;
+      margin-bottom: 30px;
+    }
+
+    &__icon {
+      margin: 0;
+      margin-left: -190px;
+      margin-bottom: 15px;
+      display: block;
     }
 
     &__content-wrapper {
-      position: absolute;
-      width: 700px;
+      width: 682px;
     }
 
     &__content {
@@ -145,7 +171,8 @@
     }
 
     &__description {
-      padding-left: 755px;
+      padding-left: 760px;
+      margin-bottom: 10px;
     }
 
     &__play-button {
@@ -153,8 +180,13 @@
     }
 
     &__button {
-      margin-left: 755px;
-      width: 225px;
+      margin-left: 760px;
+      width: 230px;
+    }
+
+    &__play-button {
+      top: 38%;
+      left: 41%;
     }
   }
 }
