@@ -85,7 +85,8 @@
     }
 
     &__navigation {
-      margin-top: 18px;
+      margin-top: 10px;
+      margin-right: 5px;
       width: 167px;
       order: 4;
     }
@@ -106,12 +107,16 @@
     width: 1050px;
     padding-left: 175px;
     padding-right: 0;
-    padding-top: 70px;
+    padding-top: 71px;
 
     &__text {
       padding-top: 48px;
-      padding-right: 80px;
-      padding-bottom: 28px;
+      padding-right: 105px;
+      padding-bottom: 25px;
+    }
+
+    &__button {
+      margin-top: 5px;
     }
   }
 }

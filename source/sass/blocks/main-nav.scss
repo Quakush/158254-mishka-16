@@ -6,6 +6,10 @@
   width: 100%;
   background-color: transparent;
 
+  &__logo {
+    padding: 21px 0 0;
+  }
+
   &__text {
     display: none;
     font-family: $font-text;
@@ -64,6 +68,7 @@
     }
 
     &__logo {
+      padding: 10px 0 0;
       width: 334px;
       order: 0;
     }
@@ -94,7 +99,7 @@
     &__logo {
       position: absolute;
       top: 0;
-      left: 50%;
+      left: 43%;
     }
 
     &__logo-image {

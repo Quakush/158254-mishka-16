@@ -1,7 +1,8 @@
 .copyright__link {
   display: flex;
+  justify-content: center;
   padding: 18px 0 24px;
-  width: 185px;
+  width: 260px;
   align-items: center;
   font-size: 19px;
   line-height: 18px;
@@ -32,6 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link {
+    width: 185px;
     padding-top: 25px;
     border: none;
   }
