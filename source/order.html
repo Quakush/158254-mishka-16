@@ -72,9 +72,9 @@
     <p class="main-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
       простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form-feedback__fieldset">
+      <fieldset class="form-feedback__fieldset form-feedback__fieldset--type">
         <div class="form-feedback__wrapper">
-          <h2 class="form-feedback__legend">Тип</h2>
+          <h2 class="form-feedback__legend form-feedback__legend--type">Тип</h2>
           <ul class="form-feedback__list form-feedback__list--type">
             <li class="form-feedback__option form-feedback__option--type">
               <input class="form-feedback__input form-feedback--radio visually-hidden" type="radio" id="interior" name="type" value="1" checked>
@@ -90,7 +90,7 @@
 
       <fieldset class="form-feedback__fieldset form-feedback__fieldset--background">
         <div class="form-feedback__wrapper">
-          <h2 class="form-feedback__legend">Цвет</h2>
+          <h2 class="form-feedback__legend form-feedback__legend--color">Цвет</h2>
           <ul class="form-feedback__list form-feedback__list--color">
             <li class="form-feedback__option form-feedback__option--color">
               <input class="form-feedback__input form-feedback--checkbox visually-hidden" type="checkbox" id="color-white" name="color-white"
@@ -125,7 +125,7 @@
 
       <fieldset class="form-feedback__fieldset">
         <div class="form-feedback__wrapper">
-          <h2 class="form-feedback__legend">ФИО</h2>
+          <h2 class="form-feedback__legend form-feedback__legend--name">ФИО</h2>
           <div class="form-feedback__column">
             <p class="form-feedback__field form-feedback__field--name">
               <label class="form-feedback__label form-feedback__label--sign" for="firstname">Имя:</label>
@@ -148,7 +148,7 @@
 
       <fieldset class="form-feedback__fieldset form-feedback__fieldset--background">
         <div class="form-feedback__wrapper">
-          <h2 class="form-feedback__legend">Тел</h2>
+          <h2 class="form-feedback__legend form-feedback__legend--phone">Тел</h2>
           <p class="form-feedback__field form-feedback__field--phone">
             <input class="form-feedback__input-text form-feedback__input-text--contact" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             <svg  class="form-feedback__icon form-feedback__icon--phone" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
@@ -181,8 +181,8 @@
 
       <fieldset class="form-feedback__fieldset">
         <div class="form-feedback__wrapper">
-          <h2 class="form-feedback__legend">Доп</h2>
-          <p class="form-feedback__field">
+          <h2 class="form-feedback__legend form-feedback__legend--another">Доп</h2>
+          <p class="form-feedback__field form-feedback__field--another">
             <textarea  class="form-feedback__textarea" name="message" rows="7"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </p>

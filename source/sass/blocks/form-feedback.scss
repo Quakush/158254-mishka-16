@@ -1,6 +1,6 @@
 .form-feedback {
   padding-top: 22px;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   &__wrapper {
     margin: 0 auto;
@@ -239,100 +239,114 @@
 
 @media (min-width: $tablet-width) {
   .form-feedback {
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      width: $tablet-width;
-      padding: 0 50px;
-    }
-
     &__fieldset--background {
       background-color: #f1f1f1;
     }
 
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 668px;
+    }
+
     &__legend {
+      display: block;
       width: 167px;
-      margin-top: 64px;
+
+      &--type {
+        margin-top: 52px;
+      }
+
+      &--color {
+        margin-top: 68px;
+      }
+
+      &--name {
+        margin-top: 68px;
+      }
+    }
+
+    &__label {
+      display: block;
+      font-size: 19px;
+      line-height: 18px;
+
+      &--sign {
+        margin: 0;
+        margin-right: 25px;
+      }
+    }
+
+    &__input {
       display: block;
     }
 
+    &__field {
+      margin: 0;
+      width: 501px;
+
+      &--name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 49px;
+        }
+      }
+
+      &--phone {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
     &__list {
-      width: 502px;
+      width: 501px;
+
+      &--type {
+        padding-top: 10px;
+        padding-left: 19px;
+      }
 
       &--color {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0;
-        padding: 60px 0 12px;
-      }
-    }
-
-    &__label {
-      font-size: 19px;
-      line-height: 18px;
-
-      &--sign {
-        margin-right: 20px;
-      }
-    }
-
-    &__option {
-      padding-left: 80px;
-    }
-
-    &__option--type {
-      &:first-child {
-        margin-top: 10px;
-        margin-bottom: 57px;
-      }
-
-      &:last-child {
-        margin-bottom: 25px;
-      }
-    }
-
-    &__option--color {
-      margin-bottom: 59px;
-      width: 240px;
-
-      &:last-child {
-        margin-top: -59px;
+        align-items: flex-start;
+        padding-top: 30px;
+        margin-bottom: 6px;
       }
     }
 
     &__column {
-      padding: 21px 0 20px;
+      padding-top: 20px;
+      width: 501px;
     }
 
-    &__field {
-      width: 500px;
-      flex-direction: row;
-      align-items: center;
-      margin: 0;
+    &__option {
+      &--type {
+      margin-bottom: 60px;
 
-      &--name {
+      &:last-child {
         margin-bottom: 22px;
       }
-
-      &--phone {
-        padding-top: 36px;
       }
-    }
 
-    &__icon--phone {
-      top: 35px;
-      right: 28px;
-    }
-
-    &__icon--email {
-      top: 0;
+      &--color {
+        margin-bottom: 60px;
+        padding-left: 79px;
+        width: 240px;
+      }
     }
 
     &__input-text {
-      padding-left: 20px;
-      padding-top: 10px;
+      margin: 0;
+      padding-left: 18px;
       font-size: 19px;
       line-height: 18px;
 
@@ -342,15 +356,10 @@
       }
     }
 
-    &__input-text--contact {
-      margin: 0;
-      padding: 0 0 15px 15px;
-      font-size: 19px;
-      line-height: 18px;
-
-      &::placeholder {
-        font-size: 19px;
-        line-height: 18px;
+    &__icon {
+      &--phone {
+        top: 36px;
+        right: 26px;
       }
     }
   }
@@ -370,7 +379,7 @@
   }
 
   .form-feedback--checkbox + .form-feedback__label::before {
-    top: -10px;
+    top: -15px;
     left: -81px;
     width: 54px;
     height: 52px;
@@ -380,5 +389,40 @@
     top: 5px;
     left: -69px;
     width: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-feedback {
+    &__wrapper {
+      justify-content: flex-start;
+      width: 1050px;
+    }
+
+    &__legend {
+      width: 175px;
+      text-align: center;
+    }
+
+    &__list {
+      width: 700px;
+
+      &--color {
+        width: 875px;
+        justify-content: flex-start;
+      }
+    }
+
+    &__column {
+      width: 700px;
+    }
+
+    &__option--color {
+      width: 263px;
+    }
+
+    &__field {
+      width: 700px;;
+    }
   }
 }
