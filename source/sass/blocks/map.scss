@@ -8,8 +8,7 @@
   background-size: 66px 101px, 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/icon-map-pin.svg"),
-                      url("../../img/map-mobile@2x.jpg");
+    background-image: url("../../img/icon-map-pin.svg"), url("../../img/map-mobile@2x.jpg");
   }
 }
 
