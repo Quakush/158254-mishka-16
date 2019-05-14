@@ -61,13 +61,13 @@
   }
 
   &__column {
-    padding-top:7px;
+    padding-top: 7px;
   }
 
   &__field {
     &--phone,
     &--email {
-    position: relative;
+      position: relative;
     }
 
     &--name {
@@ -179,7 +179,7 @@
     position: absolute;
     content: "";
     display: block;
-    top: 0px;
+    top: 0;
     left: 10px;
     width: 33px;
     height: 22px;
@@ -273,7 +273,7 @@
   }
 
   &__footer-container {
-    margin: 0 auto
+    margin: 0 auto;
   }
 }
 

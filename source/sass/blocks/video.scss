@@ -75,7 +75,7 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-bottom:107px;
+    padding-bottom: 107px;
     display: flex;
     flex-direction: column;
 
@@ -92,7 +92,8 @@
 
     &__description {
       margin-top: 5px;
-      padding: 28px 40px 34px 42px;
+      padding: 0 40px 34px 42px;
+      order: 2;
       font-size: 15px;
       line-height: 30px;
     }
@@ -115,11 +116,6 @@
     &__play-button {
       top: 38%;
       left: 40%;
-    }
-
-    &__description {
-      padding-top: 0;
-      order: 2;
     }
 
     &__button {
@@ -173,10 +169,6 @@
     &__description {
       padding-left: 760px;
       margin-bottom: 10px;
-    }
-
-    &__play-button {
-      top: 38%;
     }
 
     &__button {
