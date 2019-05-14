@@ -1,7 +1,8 @@
 .main-page {
   &__description {
     margin: 0 auto;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 260px;
     font-family: $font-text;
     font-size: 13px;
@@ -25,5 +26,12 @@
 @media (min-width: $desktop-width) {
   .main-page {
     margin-top: -107px;
+
+    &__description {
+      padding: 0;
+      width: 700px;
+      padding-top: 90px;
+      padding-bottom: 5px;
+    }
   }
 }
