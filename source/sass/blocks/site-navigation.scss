@@ -2,14 +2,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+
+  &__item {
+    border-top: 1px solid #ebebeb;
+  }
 }
 
 .site-navigation__link {
   display: block;
-  padding: 25px 0;
+  padding: 25px 0 25px 43px;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
+  text-align: left;
 
   &:hover {
     color: #666666;
@@ -24,8 +30,10 @@
   .site-navigation {
     display: flex;
     justify-content: flex-start;
+    width: 334px;
 
     &__link {
+      padding: 0;
       width: 167px;
       font-size: 15px;
     }

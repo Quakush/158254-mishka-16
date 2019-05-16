@@ -3,11 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  margin: 0 auto;
+  width: 260px;
   background-color: transparent;
+  border-bottom: 1px solid #ebebeb;
 
   &__logo {
-    padding: 21px 0 0;
+    padding: 21px 0 30px;
   }
 
   &__text {
@@ -21,7 +23,7 @@
   &__toggle {
     position: absolute;
     top: 26px;
-    right: 0;
+    right: 30px;
   }
 
   &__special-list {
@@ -59,6 +61,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 668px;
 
     &__text {
       display: block;
@@ -96,6 +99,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: 1050px;
     &__logo {
       position: absolute;
       top: 0;
