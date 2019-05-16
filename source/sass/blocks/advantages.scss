@@ -10,6 +10,8 @@
   }
 
   &__icon {
+    fill: $mark-color;
+
     &--ecology {
       padding-left: 8px;
       padding-bottom: 16px;
@@ -49,10 +51,6 @@
 .advantages__list-item {
   span {
     display: block;
-  }
-
-  svg path {
-    fill: #63d1bb;
   }
 
   &--ecology {
