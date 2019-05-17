@@ -153,7 +153,7 @@
     <section class="video wrapper">
       <h2 class="video__title">
         <span class="video__icon">
-          <svg width="32px" height="32px">
+          <svg class="video__icon-pic" width="32px" height="32px">
             <use xlink:href="img/sprite.svg#icon-video"></use>
           </svg>
         </span>
@@ -199,7 +199,7 @@
           </a>
         </li>
       </ul>
-        <a class="page-footer__copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
@@ -207,6 +207,22 @@
         </a>
     </div>
   </footer>
+
+  <section class="modal-overlay wrapper">
+    <form class="form-cart modal-overlay__form-cart" action="https://echo.htmlacademy.ru" method="POST">
+      <h2 class="form-cart__title">Добавить в корзину</h2>
+      <fieldset class="form-cart__fieldset">
+        <legend class="form-cart__legend">Выберите размер:</legend>
+        <div class="form-cart__button-wrapper">
+          <button class="form-cart__button form-cart__button--active" type="button">S</button>
+          <button class="form-cart__button" type="button">M</button>
+          <button class="form-cart__button" type="button">L</button>
+        </div>
+      </fieldset>
+      <button class="form-cart__submit button" type="submit">Добавить</button>
+    </form>
+  </section>
+
   <script src="js/menu-toggle.js"></script>
 </body>
 

@@ -1,44 +1,49 @@
 .user-navigation {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
   list-style: none;
-  width: 100%;
 
   &__item {
-    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
 
   &__icon {
     position: absolute;
     top: 40%;
     left: 0;
-    opacity: 0.3;
+    opacity: 0.2;
   }
 }
 
 .user-navigation__link {
-  position: relative;
   display: block;
-  padding: 25px 0 25px 43px;
+  margin: 0 auto;
+  width: 320px;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
   text-align: left;
 
   &:hover {
-    color: #666666;
+    opacity: 0.6;
+  }
+
+  &:hover .user-navigation__icon {
+    opacity: 1;
+    fill: $mark-color;
   }
 
   &:active {
-    opacity: 0.2;
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet-width) {
   .user-navigation {
-    width: 334px;
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
+    padding-left: 10px;
 
     &__link svg {
       padding-right: 20px;

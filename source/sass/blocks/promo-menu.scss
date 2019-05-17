@@ -10,8 +10,12 @@
     text-align: left;
   }
 
-  svg {
-    opacity: 0.2;
+  &__icon {
+    opacity: 0.5;
+  }
+
+  &__item:hover .promo-menu__icon {
+    opacity: 0.7;
   }
 }
 
@@ -22,12 +26,30 @@
 
   &--interior {
     padding: 18px 35px 22px 30px;
-    background-color: #63d1bb;
+    background-color: $mark-color;
+  }
+
+  &--interior:hover {
+    background-color: #58d5bc;
+  }
+
+  &--interior:active .promo-menu__icon,
+  &--interior:active .promo-menu__text {
+    opacity: 0.3;
   }
 
   &--toy {
     padding: 20px 30px 24px;
-    background-color: #56c3b2;
+    background-color: #55c3b2;
+  }
+
+  &--toy:hover {
+    background-color: #45c1ae;
+  }
+
+  &--toy:active .promo-menu__icon,
+  &--toy:active .promo-menu__text {
+    opacity: 0.3;
   }
 }
 

@@ -31,6 +31,10 @@
     border: none;
     background-color: #ffffff;
 
+    &:hover {
+      border: 2px solid #c6c6c6;
+    }
+
     &--active {
       border: 2px solid $mark-color;
     }

@@ -14,10 +14,10 @@
   &__icon {
     display: inline-block;
     margin-right: 24px;
-  }
 
-  &__icon path {
-    fill: $mark-color;
+    &-pic {
+      fill: $mark-color;
+    }
   }
 
   &__content {

@@ -12,8 +12,8 @@
   &__link {
     display: block;
 
-    &:hover path {
-      fill: #46c1ae;
+    &:hover {
+      fill: $mark-color;
     }
 
     &:active {
