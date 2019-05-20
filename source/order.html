@@ -12,51 +12,51 @@
 <body>
 
   <header class="page-header">
-    <div class="wrapper">
-      <nav class="main-nav main-nav--closed">
-        <a class="main-nav__logo" href="index.html" aria-label="Логотип Мишка">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="логотип Мишка">
-          </picture>
-        </a>
-        <button class="main-nav__toggle menu-toggle" type="button" aria-label="Меню"></button>
-        <ul class="main-nav__site-list site-navigation">
-          <li class="site-navigation__item">
-            <a href="catalog.html" class="site-navigation__link">Каталог товаров</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list user-navigation">
-          <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link user-navigation__link--search">
-              <svg class="user-navigation__icon" width="17" height="17">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
-              </svg>
-              Поиск по сайту</a>
-          </li>
-          <li class="user-navigation__item">
-            <a href="#" class="user-navigation__link user-navigation__link--cart">
-              <svg class="user-navigation__icon" width="20" height="19">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
-              </svg>
-              Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="main-nav__special-list special-list">
-          <li class="special-list__item">
-            <a href="#" class="special-list__link">Новые поступления</a>
-          </li>
-          <li class="special-list__item">
-              <a href="#" class="special-list__link">Распродажа</a>
+        <nav class="main-nav main-nav--closed">
+          <div class="main-nav__header">
+            <a class="main-nav__logo" href="index.html" aria-label="Логотип Мишка">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="логотип Мишка">
+              </picture>
+            </a>
+            <button class="main-nav__toggle menu-toggle" type="button" aria-label="Меню"></button>
+          </div>
+          <ul class="main-nav__site-list site-navigation">
+            <li class="site-navigation__item">
+              <a href="catalog.html" class="site-navigation__link">Каталог товаров</a>
             </li>
-        </ul>
-        <p class="main-nav__text">Бесплатная доставка по России</p>
-      </nav>
-    </div>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list user-navigation">
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link user-navigation__link--search">
+                <svg class="user-navigation__icon" width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                Поиск по сайту</a>
+            </li>
+            <li class="user-navigation__item">
+              <a href="#" class="user-navigation__link user-navigation__link--cart">
+                <svg class="user-navigation__icon" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__special-list special-list">
+            <li class="special-list__item">
+              <a href="#" class="special-list__link">Новые поступления</a>
+            </li>
+            <li class="special-list__item">
+                <a href="#" class="special-list__link">Распродажа</a>
+              </li>
+          </ul>
+          <p class="main-nav__text">Бесплатная доставка по России</p>
+        </nav>
   </header>
 
   <main class="main-page">

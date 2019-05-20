@@ -10,15 +10,18 @@
   &__icon {
     position: absolute;
     top: 40%;
-    left: 0;
+    left: -43px;
     opacity: 0.2;
   }
 }
 
 .user-navigation__link {
-  display: block;
-  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 320px;
+  margin-left: 75px;
+  padding: 27px 0;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
@@ -43,25 +46,34 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding-left: 10px;
 
-    &__link svg {
-      padding-right: 20px;
+    &__item {
+      border: none;
     }
 
-    &__link--search {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 60px;
-      font-size: 0;
+    &__icon {
+      left: 32px;
     }
 
-    &__link--cart {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 274px;
+    &__link {
+      margin-left: 0;
+      width: 265px;
+      padding: 30px 0 33px;
+      text-align: right;
+      border-left: 1px solid #ebebeb;
+
+      &--search {
+        width: 82px;
+        font-size: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-navigation {
+    &__link {
+      padding: 28px 0;
     }
   }
 }

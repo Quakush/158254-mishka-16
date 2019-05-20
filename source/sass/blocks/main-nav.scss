@@ -1,19 +1,20 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 
   &__header {
     position: relative;
-    padding: 22px 0;
+    padding: 22px 0 20px;
     min-height: 80px;
     border-bottom: 1px solid #ececec;
   }
 
   &__logo {
-    display: block;
-    margin: 0 auto;
-    width: 86px;
-    height: 35px;
+    display: flex;
+    justify-content: center;
+    margin-left: -23px;
 
     &:hover {
       opacity: 0.6;
@@ -22,6 +23,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+
+  &__logo-image {
+    width: 86px;
+    height: 35px;
   }
 
   &__text {
@@ -35,7 +41,7 @@
   &__toggle {
     position: absolute;
     top: 26px;
-    right: 30px;
+    right: 38px;
   }
 
   &__special-list {
@@ -84,11 +90,14 @@
 
     &__text {
       display: block;
+      padding: 20px 0;
+      order: 2;
+      width: 35%;
+      text-align: right;
     }
 
     &__logo {
-      width: 112px;
-      height: 46px;
+      margin-left: 0;
     }
 
     &__logo-image {
@@ -98,11 +107,6 @@
 
     &__toggle {
       display: none;
-    }
-
-    &__user-list {
-      width: 83%;
-      flex-grow: 1;
     }
 
     &__site-list {
@@ -115,10 +119,10 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1050px;
-    &__logo {
-      position: absolute;
-      top: 0;
-      left: 43%;
+
+    &__header {
+      margin-top: 6px;
+      width: 14%;
     }
 
     &__logo-image {
@@ -127,22 +131,22 @@
     }
 
     &__site-list {
-      width: 525px;
-      order: 0;
+      width: 43%;
+      order: -1;
     }
 
     &__user-list {
-      width: 525px;
-      order: 1;
+      width: 43%;
     }
 
     &__special-list {
-      width: 525px;
-      order: 2;
+      width: 73%;
+      display: flex;
+      align-items: center;
     }
 
     &__text {
-      width: 525px;
+      width: 26%;
     }
   }
 }

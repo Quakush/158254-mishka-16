@@ -31,6 +31,8 @@
 
   &--interior:hover {
     background-color: #58d5bc;
+    margin-top: -5px;
+    padding-bottom: 27px;
   }
 
   &--interior:active .promo-menu__icon,
@@ -45,6 +47,8 @@
 
   &--toy:hover {
     background-color: #45c1ae;
+    margin-top: -5px;
+    padding-bottom: 29px;
   }
 
   &--toy:active .promo-menu__icon,
@@ -60,10 +64,18 @@
 
       &--interior {
         padding: 27px 36px 28px;
+
+        &:hover {
+          padding-bottom: 33px;
+        }
       }
 
       &--toy {
         padding: 27px 34px 30px 37px;
+
+        &:hover {
+          padding-bottom: 35px;
+        }
       }
     }
 
@@ -86,10 +98,18 @@
 
       &--interior {
         padding: 27px 36px 29px;
+
+        &:hover {
+          padding-bottom: 34px;
+        }
       }
 
       &--toy {
         padding: 27px 34px 31px 37px;
+
+        &:hover {
+          padding-bottom: 36px;
+        }
       }
     }
   }
