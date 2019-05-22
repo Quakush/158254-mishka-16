@@ -1,5 +1,7 @@
 .main-page {
+  margin: 0 auto;
   margin-top: -20px;
+  width: 320px;
 
   &__description {
     margin: 0 auto;
@@ -15,6 +17,7 @@
 @media (min-width: $tablet-width) {
   .main-page {
     margin-top: -95px;
+    width: 768px;
 
     &__description {
       width: $tablet-width;
@@ -28,6 +31,7 @@
 @media (min-width: $desktop-width) {
   .main-page {
     margin-top: -99px;
+    width: 1150px;
 
     &__description {
       padding: 0;

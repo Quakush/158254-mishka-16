@@ -1,6 +1,11 @@
 .contacts {
-  padding-top: 70px;
-  padding-bottom: 37px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px 0 35px;
+
+  &__wrapper {
+    padding: 0 30px;
+  }
 
   &__title {
     padding: 17px 0 15px;
@@ -64,8 +69,13 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding-top: 32px;
-    padding-bottom: 5px;
+    width: 768px;
+    padding-top: 28px;
+    padding-bottom: 3px;
+
+    &__wrapper {
+      padding: 0 50px;
+    }
 
     &__title {
       display: flex;
@@ -109,14 +119,22 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin: 0 auto;
-    padding-top: 185px;
-    padding-bottom: 65px;
-    width: 1050px;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    width: 1150px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-start;
+
+    &__wrapper {
+      padding-bottom: 69px;
+      width: 525px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
 
     &__map {
       width: 525px;
@@ -130,27 +148,29 @@
     &__list {
       flex-direction: column;
       margin-left: 175px;
-      margin-top: 20px;
+      margin-top: -20px;
     }
 
     &__title {
       width: 525px;
       flex-direction: row-reverse;
+      justify-content: space-between;
       align-items: center;
       padding: 0 85px 0 65px;
       font-size: 53px;
       line-height: 57px;
     }
 
+    &__icon {
+      margin-right: 65px;
+    }
+
     &__button {
       margin: 0;
-      margin-left: 175px;
+      margin-left: 225px;
       margin-top: -90px;
       width: 230px;
+      align-self: flex-start;
     }
-  }
-
-  .contacts .wrapper {
-    width: 525px;
   }
 }

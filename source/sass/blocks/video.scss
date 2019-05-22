@@ -1,10 +1,11 @@
 .video {
-  padding-bottom: 86px;
+  padding: 0 30px;
+  padding-bottom: 60px;
 
   &__title {
     display: flex;
     align-items: center;
-    padding: 24px 0 21px 33px;
+    padding: 24px 0 25px 33px;
     font-size: 17px;
     line-height: 24px;
     border: 1px solid #ebebeb;
@@ -59,6 +60,12 @@
     }
   }
 
+  &__description-wrapper {
+    padding-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-top: none;
+  }
+
   &__description {
     padding: 23px 40px 24px 33px;
     font-family: $font-text;
@@ -75,25 +82,31 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-bottom: 107px;
+    padding: 20px 50px 60px;
     display: flex;
     flex-direction: column;
 
     &__title {
-      padding: 29px 0 21px 42px;
+      padding: 27px 0 23px 42px;
       font-size: 20px;
       order: 1;
-      border: none;
+      border: 1px solid #ebebeb;
+      border-top: none;
+      border-bottom: none;
     }
 
     &__icon {
       margin-right: 32px;
     }
 
+    &__description-wrapper {
+      order: 2;
+      padding-bottom: 45px;
+    }
+
     &__description {
       margin-top: 5px;
       padding: 0 40px 34px 42px;
-      order: 2;
       font-size: 15px;
       line-height: 30px;
     }

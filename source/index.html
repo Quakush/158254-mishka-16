@@ -65,24 +65,29 @@
         <header class="main-header wrapper">
           <h1 class="main-header__title promo-title">Милые штуки ручной<br> работы для дома</h1>
         </header>
-        <ul class="promo__list promo-menu">
-          <li class="promo-menu__item">
-            <a class="promo-menu__link promo-menu__link--interior" href="#">
-              <span class="promo-menu__text">Предметы интерьера</span>
-              <svg class="promo-menu__icon" width="40" height="62">
-                <use xlink:href="img/sprite.svg#icon-lamp"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="promo-menu__item">
-            <a class="promo-menu__link promo-menu__link--toy" href="#">
-              <span class="promo-menu__text">Детские игрушки</span>
-              <svg class="promo-menu__icon" width="60px" height="60">
-                <use xlink:href="img/sprite.svg#icon-box"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="promo__banner">
+          <ul class="promo__list promo-menu">
+            <li class="promo-menu__item">
+              <a class="promo-menu__link promo-menu__link--interior" href="#">
+                <span class="promo-menu__text">Предметы интерьера</span>
+                <svg class="promo-menu__icon" width="40" height="62">
+                  <use xlink:href="img/sprite.svg#icon-lamp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="promo-menu__item">
+              <a class="promo-menu__link promo-menu__link--toy" href="#">
+                <span class="promo-menu__text">Детские игрушки</span>
+                <svg class="promo-menu__icon" width="60px" height="60">
+                  <use xlink:href="img/sprite.svg#icon-box"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <svg class="promo-menu__icon--fill">
+            <use xlink:href="img/sprite.svg#icon-fill"></use>
+          </svg>
+        </div>
       </section>
     </div>
 
@@ -126,10 +131,12 @@
             <a class="week-goods__button button" href="order.html">Заказать</a>
           </div>
         </div>
-        </section>
+      <svg class="week-goods__icon-line" width="320" height="23">
+        <use xlink:href="img/sprite.svg#icon-line"></use>
+      </svg>
+    </section>
 
     <section class="advantages">
-      <div class="wrapper">
         <h2 class="advantages__title section-title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item advantages__list-item--ecology">
@@ -175,7 +182,6 @@
             </span>
             Поставляется в подарочной упаковке</li>
         </ul>
-      </div>
     </section>
 
     <section class="reviews">
@@ -200,10 +206,13 @@
           </button>
         </div>
         <a class="reviews__button button" href="#">Написать</a>
+      <svg class="reviews__icon-line">
+        <use xlink:href="img/sprite.svg#icon-line"></use>
+      </svg>
     </section>
 
     <section class="contacts">
-      <div class="wrapper">
+      <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты
           <span class="contacts__icon">
             <svg width="47" height="82">
@@ -211,24 +220,24 @@
             </svg>
           </span>
         </h2>
-          <div class="contacts__list">
-            <div class="contacts__row">
-              <p class="contacts__list-term">e-mail:</p>
-              <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </div>
-            <div class="contacts__row">
-              <p class="contacts__list-term">адрес:</p>
-              <p class="contacts__list-description">
-                г. Санкт-Петербург,<br>
-                ул. Большая
-                Конюшенная,<br>
-                д. 19/8, офис 101</p>
-            </div>
+        <div class="contacts__list">
+          <div class="contacts__row">
+            <p class="contacts__list-term">e-mail:</p>
+            <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__row">
+            <p class="contacts__list-term">адрес:</p>
+            <p class="contacts__list-description">
+              г. Санкт-Петербург,<br>
+              ул. Большая
+              Конюшенная,<br>
+              д. 19/8, офис 101</p>
           </div>
         </div>
-        <div class="contacts__map map">
-          <div class="map__marker"></div>
-        </div>
+      </div>
+      <div class="contacts__map map">
+        <div class="map__marker"></div>
+      </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>

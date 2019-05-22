@@ -1,9 +1,16 @@
 .page-title {
+  position: relative;
   padding: 72px 0 75px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   background-color: #f1f1f1;
+  z-index: 0;
+
+  &__icon-fill {
+    position: absolute;
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -11,6 +18,12 @@
     padding: 97px 0;
     font-size: 43px;
     line-height: 50px;
+
+    &__icon-fill {
+      display: block;
+      left: 0;
+      bottom: -6px;
+    }
   }
 }
 

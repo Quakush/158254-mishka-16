@@ -21,7 +21,7 @@
   flex-direction: column;
   width: 320px;
   margin-left: 75px;
-  padding: 27px 0;
+  padding: 27px 0 27px;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
@@ -73,7 +73,7 @@
 @media (min-width: $desktop-width) {
   .user-navigation {
     &__link {
-      padding: 28px 0;
+      padding: 30px 0;
     }
   }
 }

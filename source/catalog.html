@@ -24,7 +24,7 @@
           </div>
           <ul class="main-nav__site-list site-navigation">
             <li class="site-navigation__item">
-              <a class="site-navigation__link">Каталог товаров</a>
+              <a href="catalog.html" class="site-navigation__link">Каталог товаров</a>
             </li>
             <li class="site-navigation__item">
               <a href="order.html" class="site-navigation__link">Вязание на заказ</a>
@@ -60,7 +60,12 @@
 
   <main class="main-page">
     <header class="main-header wrapper-body">
-      <h1 class="main-header__title page-title">Каталог товаров</h1>
+      <h1 class="main-header__title page-title">
+        Каталог товаров
+        <svg class="page-title__icon-fill" width="768" height="34">
+          <use xlink:href="img/sprite.svg#icon-fill"></use>
+        </svg>
+      </h1>
     </header>
 
     <section class="catalog wrapper">
@@ -163,9 +168,11 @@
         </video>
         <button class="video__play-button" type="button" aria-label="Воспроизвести"></button>
       </div>
-      <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+      <div class="video__description-wrapper">
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
         как появляются наши товары.</p>
-      <a class="video__button button" href="#">Сделать заказ</a>
+        <a class="video__button button" href="#">Сделать заказ</a>
+      </div>
     </section>
   </main>
 

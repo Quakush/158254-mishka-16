@@ -13,7 +13,7 @@
   flex-direction: column;
   width: 320px;
   margin-left: 75px;
-  padding: 27px 0;
+  padding: 26px 0 27px;
   font-size: 17px;
   line-height: 24px;
   color: $color-title;
@@ -50,7 +50,7 @@
   .site-navigation {
     &__link {
       margin-right: 52px;
-      padding: 26px 0;
+      padding: 30px 0 32px;
       font-size: 17px;
     }
   }

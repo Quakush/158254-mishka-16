@@ -1,18 +1,20 @@
 .catalog {
+  padding: 0 30px;
   padding-top: 12px;
 
   &__card-product {
     margin-bottom: 32px;
 
     &:last-child {
-      margin-bottom: 47px;
+      margin-bottom: 31px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding-top: 33px;
+    padding: 0 50px;
+    padding-top: 35px;
 
     &__card-product {
       margin-bottom: 51px;
