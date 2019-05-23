@@ -18,7 +18,7 @@ var include = require("posthtml-include");
 
 gulp.task("clean", function () {
   return del("build");
- });
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -70,7 +70,7 @@ gulp.task("webp", function () {
   return gulp.src("source/img/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("source/img"));
- });
+});
 
 gulp.task("copy", function() {
   return gulp.src([
@@ -90,7 +90,7 @@ gulp.task("html", function () {
     include()
   ]))
   .pipe(gulp.dest("build/"));
- });
+});
 
 gulp.task("build", gulp.series(
   "clean",
