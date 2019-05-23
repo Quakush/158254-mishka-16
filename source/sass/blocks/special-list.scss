@@ -5,18 +5,26 @@
     font-size: 15px;
     line-height: 24px;
     color: $color-title;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .special-list {
-    display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: transparent;
 
     &__link {
-      display: block;
-      padding: 27px 0;
-      width: 218px;
+      margin-right: 62px;
+      margin-top: 30px;
     }
   }
 }

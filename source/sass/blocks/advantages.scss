@@ -1,5 +1,5 @@
 .advantages {
-  padding: 68px 0 0;
+  padding: 19px 30px 0;
 
   &__list {
     list-style: none;
@@ -14,12 +14,12 @@
 
     &--ecology {
       padding-left: 8px;
-      padding-bottom: 16px;
+      padding-bottom: 14px;
     }
 
     &--style {
-      padding-top: 27px;
-      padding-bottom: 21px;
+      padding-top: 30px;
+      padding-bottom: 22px;
     }
 
     &--likes {
@@ -37,7 +37,7 @@
     &--support {
       padding-top: 33px;
       margin-left: -5px;
-      padding-bottom: 22px;
+      padding-bottom: 23px;
     }
 
     &--gift {
@@ -80,8 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-top: 99px;
-    padding-bottom: 82px;
+    padding: 29px 50px 82px;
 
     &__icon {
       &--ecology {
@@ -92,31 +91,31 @@
       &--style {
         padding-top: 59px;
         padding-left: 3px;
-        padding-bottom: 21px;
+        padding-bottom: 23px;
       }
 
       &--likes {
         padding-top: 62px;
         padding-left: 10px;
-        padding-bottom: 17px;
+        padding-bottom: 18px;
       }
 
       &--handmade {
         padding-top: 3px;
         padding-left: 5px;
-        padding-bottom: 13px;
+        padding-bottom: 14px;
       }
 
       &--support {
         padding-top: 60px;
         margin-left: -5px;
-        padding-bottom: 23px;
+        padding-bottom: 25px;
       }
 
       &--gift {
         padding-top: 59px;
         padding-left: 5px;
-        padding-bottom: 15px;
+        padding-bottom: 17px;
       }
     }
   }
@@ -168,13 +167,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages .wrapper {
-    width: 700px;
-  }
-
   .advantages {
-    padding-top: 135px;
+    width: 1150px;
+    padding-top: 43px;
     padding-bottom: 89px;
+
+    &__title {
+      padding-left: 175px;
+    }
   }
 
   .advantages__list {

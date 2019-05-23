@@ -5,22 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="source/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
       <nav class="main-nav main-nav--closed">
-        <a class="main-nav__logo" aria-label="Логотип Мишка">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="логотип Мишка">
-          </picture>
-        </a>
-        <button class="main-nav__toggle menu-toggle" type="button" aria-label="Меню"></button>
+        <div class="main-nav__header">
+          <a class="main-nav__logo" aria-label="Логотип Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="логотип Мишка">
+            </picture>
+          </a>
+          <button class="main-nav__toggle menu-toggle" type="button" aria-label="Меню"></button>
+        </div>
         <ul class="main-nav__site-list site-navigation">
           <li class="site-navigation__item">
             <a href="catalog.html" class="site-navigation__link">Каталог товаров</a>
@@ -33,14 +38,14 @@
           <li class="user-navigation__item">
             <a href="#" class="user-navigation__link user-navigation__link--search">
               <svg class="user-navigation__icon" width="17" height="17">
-                <use xlink:href="img/sprite.svg#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
               Поиск по сайту</a>
           </li>
           <li class="user-navigation__item">
             <a href="#" class="user-navigation__link user-navigation__link--cart">
               <svg class="user-navigation__icon" width="20" height="19">
-                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                <use xlink:href="#icon-cart"></use>
               </svg>
               Корзина: пока пуста</a>
           </li>
@@ -63,24 +68,29 @@
         <header class="main-header wrapper">
           <h1 class="main-header__title promo-title">Милые штуки ручной<br> работы для дома</h1>
         </header>
-        <ul class="promo__list promo-menu">
-          <li class="promo-menu__item">
-            <a class="promo-menu__link promo-menu__link--interior" href="#">
-              <span class="promo-menu__text">Предметы интерьера</span>
-              <svg class="promo-menu__icon" width="40" height="62">
-                <use xlink:href="img/sprite.svg#icon-lamp"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="promo-menu__item">
-            <a class="promo-menu__link promo-menu__link--toy" href="#">
-              <span class="promo-menu__text">Детские игрушки</span>
-              <svg class="promo-menu__icon" width="60px" height="60">
-                <use xlink:href="img/sprite.svg#icon-box"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="promo__banner">
+          <ul class="promo__list promo-menu">
+            <li class="promo-menu__item">
+              <a class="promo-menu__link promo-menu__link--interior" href="#">
+                <span class="promo-menu__text">Предметы интерьера</span>
+                <svg class="promo-menu__icon" width="40" height="62">
+                  <use xlink:href="#icon-interior"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="promo-menu__item">
+              <a class="promo-menu__link promo-menu__link--toy" href="#">
+                <span class="promo-menu__text">Детские игрушки</span>
+                <svg class="promo-menu__icon" width="60px" height="60">
+                  <use xlink:href="#icon-toy"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <svg class="promo-menu__icon--fill">
+            <use xlink:href="#icon-fill"></use>
+          </svg>
+        </div>
       </section>
     </div>
 
@@ -124,56 +134,57 @@
             <a class="week-goods__button button" href="order.html">Заказать</a>
           </div>
         </div>
-        </section>
+      <svg class="week-goods__icon-line" width="320" height="23">
+        <use xlink:href="#icon-line"></use>
+      </svg>
+    </section>
 
     <section class="advantages">
-      <div class="wrapper">
         <h2 class="advantages__title section-title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__list-item advantages__list-item--ecology">
             <span class="advantages__icon--ecology">
               <svg class="advantages__icon" width="32" height="37">
-                <use xlink:href="img/sprite.svg#icon-ecology"></use>
+                <use xlink:href="#icon-feature-flower"></use>
               </svg>
             </span>
             Экологически чистые материалы</li>
           <li class="advantages__list-item advantages__list-item--style">
             <span class="advantages__icon--style">
               <svg class="advantages__icon" width="46" height="27">
-                <use xlink:href="img/sprite.svg#icon-style"></use>
+                <use xlink:href="#icon-feature-money"></use>
               </svg>
             </span>
             Скандинавский стиль по российской цене</li>
           <li class="advantages__list-item advantages__list-item--likes">
             <span class="advantages__icon--likes">
               <svg class="advantages__icon" width="33" height="28">
-                <use xlink:href="img/sprite.svg#icon-likes"></use>
+                <use xlink:href="#icon-feature-heart"></use>
               </svg>
             </span>
             Увеличивает лайки на фотографиях</li>
           <li class="advantages__list-item advantages__list-item--handmade">
             <span class="advantages__icon--handmade">
               <svg class="advantages__icon" width="34" height="34">
-                <use xlink:href="img/sprite.svg#icon-handmade"></use>
+                <use xlink:href="#icon-feature-ball"></use>
               </svg>
             </span>
             Связано вручную с любовью и умилением</li>
           <li class="advantages__list-item advantages__list-item--support">
             <span class="advantages__icon--support">
               <svg class="advantages__icon" width="54.156px" height="23.183px">
-                <use xlink:href="img/sprite.svg#icon-support"></use>
+                <use xlink:href="#icon-feature-rocket"></use>
               </svg>
             </span>
             Поддержка отечественного производителя</li>
           <li class="advantages__list-item advantages__list-item--gift">
             <span class="advantages__icon--gift">
               <svg class="advantages__icon" width="33" height="32">
-                <use xlink:href="img/sprite.svg#icon-gift"></use>
+                <use xlink:href="#icon-feature-gift"></use>
               </svg>
             </span>
             Поставляется в подарочной упаковке</li>
         </ul>
-      </div>
     </section>
 
     <section class="reviews">
@@ -188,45 +199,48 @@
         <div class="reviews__navigation">
           <button class="reviews__nav-button reviews__nav-button--prev" type="button" aria-label="Назад">
             <svg width="50" height="26">
-              <use xlink:href="img/sprite.svg#arrow-left"></use>
+              <use xlink:href="#icon-left-arrow"></use>
             </svg>
           </button>
           <button class="reviews__nav-button reviews__nav-button--next" type="button" aria-label="Назад">
             <svg width="50" height="26">
-              <use xlink:href="img/sprite.svg#arrow-right"></use>
+              <use xlink:href="#icon-right-arrow"></use>
             </svg>
           </button>
         </div>
         <a class="reviews__button button" href="#">Написать</a>
+      <svg class="reviews__icon-line">
+        <use xlink:href="#icon-line"></use>
+      </svg>
     </section>
 
     <section class="contacts">
-      <div class="wrapper">
+      <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты
           <span class="contacts__icon">
             <svg width="47" height="82">
-              <use xlink:href="img/sprite.svg#icon-flag"></use>
+              <use xlink:href="#icon-flag"></use>
             </svg>
           </span>
         </h2>
-          <div class="contacts__list">
-            <div class="contacts__row">
-              <p class="contacts__list-term">e-mail:</p>
-              <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </div>
-            <div class="contacts__row">
-              <p class="contacts__list-term">адрес:</p>
-              <p class="contacts__list-description">
-                г. Санкт-Петербург,<br>
-                ул. Большая
-                Конюшенная,<br>
-                д. 19/8, офис 101</p>
-            </div>
+        <div class="contacts__list">
+          <div class="contacts__row">
+            <p class="contacts__list-term">e-mail:</p>
+            <a class="contacts__list-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__row">
+            <p class="contacts__list-term">адрес:</p>
+            <p class="contacts__list-description">
+              г. Санкт-Петербург,<br>
+              ул. Большая
+              Конюшенная,<br>
+              д. 19/8, офис 101</p>
           </div>
         </div>
-        <div class="contacts__map map">
-          <div class="map__marker"></div>
-        </div>
+      </div>
+      <div class="contacts__map map">
+        <div class="map__marker"></div>
+      </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
@@ -234,37 +248,37 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
-        <svg width="102" height="34">
-          <use xlink:href="img/sprite.svg#footer-logo"></use>
+        <svg class="page-footer__logo-icon" width="102" height="34">
+          <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social social-links">
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.instagram.com" aria-label="Instagram">
             <svg width="22" height="21">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://www.facebook.com" aria-label="Facebook">
             <svg width="15" height="28">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
+              <use xlink:href="#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social-links__item">
           <a class="social-links__link" href="https://twitter.com" aria-label="Twitter">
             <svg width="23" height="20">
-              <use xlink:href="img\sprite.svg#icon-tw"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
-        <a class="page-footer__copyright copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <span class="copyright__text">Разработано</span>
           <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="#icon-htmlacademy"></use>
           </svg>
         </a>
     </div>

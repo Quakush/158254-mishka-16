@@ -1,7 +1,7 @@
 .week-goods {
+  position: relative;
   margin: 0 auto;
-  padding-top: 27px;
-  width: 260px;
+  padding: 28px 30px 50px;
 
   &__title {
     margin-bottom: 4px;
@@ -32,14 +32,23 @@
     text-align: center;
     color: $color-text;
   }
+
+  &__icon-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .week-goods {
-    padding-top: 47px;
-    width: 678px;
+    padding: 47px 45px 70px;
     display: flex;
     flex-direction: column;
+
+    &__icon-line {
+      width: 768px;
+    }
 
     &__mark {
       margin-left: auto;
@@ -104,7 +113,11 @@
 @media (min-width: $desktop-width) {
   .week-goods {
     width: 1050px;
-    padding-top: 126px;
+    padding: 126px 0 90px;
+
+    &__icon-line {
+      width: 1050px;
+    }
 
     &__header {
       flex-direction: row-reverse;

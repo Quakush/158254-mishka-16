@@ -1,8 +1,9 @@
 .form-cart {
-  padding: 40px 0 25px;
+  padding: 31px 0 25px;
 
   &__title {
-    padding: 15px 50px;
+    margin-bottom: 12px;
+    padding: 0 50px;
     font-size: 25px;
     line-height: 30px;
     text-transform: uppercase;
@@ -14,22 +15,27 @@
   }
 
   &__legend {
-    padding: 10px 0;
+    margin-left: 50px;
+    margin-bottom: 17px;
     font-family: $font-text;
     font-size: 15px;
     line-height: 30px;
     color: $color-text;
-    text-align: center;
   }
 
   &__button {
+    margin-right: 6px;
     display: block;
-    width: 86px;
-    height: 50px;
+    width: 82px;
+    height: 52px;
     font-size: 17px;
     line-height: 16px;
     border: none;
     background-color: #ffffff;
+
+    &:hover {
+      border: 2px solid #c6c6c6;
+    }
 
     &--active {
       border: 2px solid $mark-color;
@@ -44,23 +50,39 @@
 
   &__button-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: -12px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-cart {
+    padding-top: 34px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 57px;
+      margin-bottom: 13px;
+    }
+
+    &__legend {
+      font-size: 17px;
+      line-height: 30px;
+      text-align: center;
+    }
+
     &__button {
       width: 112px;
     }
 
     &__submit {
-      width: 340px;
-      margin: 30px auto;
+      width: 350px;
+      margin: 20px auto;
     }
 
     &__button-wrapper {
-      width: 340px;
+      width: 350px;
       margin: 0 auto;
     }
   }

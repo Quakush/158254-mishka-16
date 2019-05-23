@@ -1,10 +1,11 @@
 .video {
-  padding-bottom: 86px;
+  padding: 0 30px;
+  padding-bottom: 60px;
 
   &__title {
     display: flex;
     align-items: center;
-    padding: 24px 0 21px 33px;
+    padding: 24px 0 25px 33px;
     font-size: 17px;
     line-height: 24px;
     border: 1px solid #ebebeb;
@@ -14,20 +15,20 @@
   &__icon {
     display: inline-block;
     margin-right: 24px;
-  }
 
-  &__icon path {
-    fill: $mark-color;
+    &-pic {
+      fill: $mark-color;
+    }
   }
 
   &__content {
     width: 260px;
     height: 150px;
-    background: url("../../img/video-mobile@1x.jpg") no-repeat 0 0;
+    background: url("../img/video-mobile@1x.jpg") no-repeat 0 0;
     background-size: 260px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/video-mobile@2x.jpg");
+      background-image: url("../img/video-mobile@2x.jpg");
     }
   }
 
@@ -42,7 +43,7 @@
     width: 130px;
     height: 110px;
     background-color: transparent;
-    background-image: url("../../img/icon-play.svg");
+    background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 101px 77px;
@@ -57,6 +58,12 @@
       background-size: 81px 62px;
       opacity: 0.7;
     }
+  }
+
+  &__description-wrapper {
+    padding-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-top: none;
   }
 
   &__description {
@@ -75,25 +82,31 @@
 
 @media (min-width: $tablet-width) {
   .video {
-    padding-bottom: 107px;
+    padding: 20px 50px 60px;
     display: flex;
     flex-direction: column;
 
     &__title {
-      padding: 29px 0 21px 42px;
+      padding: 27px 0 23px 42px;
       font-size: 20px;
       order: 1;
-      border: none;
+      border: 1px solid #ebebeb;
+      border-top: none;
+      border-bottom: none;
     }
 
     &__icon {
       margin-right: 32px;
     }
 
+    &__description-wrapper {
+      order: 2;
+      padding-bottom: 45px;
+    }
+
     &__description {
       margin-top: 5px;
       padding: 0 40px 34px 42px;
-      order: 2;
       font-size: 15px;
       line-height: 30px;
     }
@@ -105,11 +118,11 @@
     &__content {
       width: 668px;
       height: 455px;
-      background: url("../../img/video-tablet@1x.jpg") no-repeat 0 0;
+      background: url("../img/video-tablet@1x.jpg") no-repeat 0 0;
       background-size: 668px auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/video-tablet@2x.jpg");
+        background-image: url("../img/video-tablet@2x.jpg");
       }
     }
 
@@ -129,7 +142,7 @@
 @media (min-width: $desktop-width) {
   .video {
     padding-top: 5px;
-    padding-bottom: 164px;
+    padding-bottom: 117px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -140,7 +153,7 @@
       padding: 7px 0 0 0;
       width: 228px;
       margin-left: 760px;
-      margin-top: -423px;
+      margin-top: -420px;
       margin-bottom: 30px;
     }
 
@@ -158,11 +171,11 @@
     &__content {
       width: 682px;
       height: 455px;
-      background: url("../../img/video-desktop@1x.jpg") no-repeat 0 0;
+      background: url("../img/video-desktop@1x.jpg") no-repeat 0 0;
       background-size: 682px auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/video-desktop@2x.jpg");
+        background-image: url("../img/video-desktop@2x.jpg");
       }
     }
 

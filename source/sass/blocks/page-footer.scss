@@ -27,6 +27,14 @@
     &__logo {
       display: block;
       width: 180px;
+
+      &:hover {
+        fill: $mark-color;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &__wrapper {

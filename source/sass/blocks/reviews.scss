@@ -1,11 +1,18 @@
 .reviews {
+  position: relative;
   margin: 0 auto;
-  padding: 0 30px;
-  padding-top: 53px;
-  width: 320px;
+  padding: 56px 30px 60px;
+
+  &__icon-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 23px;
+  }
 
   &__text {
-    padding: 23px 0 30px;
+    padding: 25px 0 30px;
     font-family: $font-text;
     font-size: 15px;
     line-height: 30px;
@@ -18,7 +25,7 @@
 
   &__author-email {
     display: block;
-    padding: 12px 0 32px;
+    padding: 12px 0 34px;
     font-family: $font-text;
     color: $color-text;
     font-style: normal;
@@ -29,7 +36,7 @@
   }
 
   &__nav-button {
-    margin-bottom: 38px;
+    margin-bottom: 35px;
     width: 130px;
     height: 52px;
     background-color: #ffffff;
@@ -52,15 +59,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 78px 48px;
+    padding: 78px 48px 86px;
     width: $tablet-width;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 350px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("img/review@2x.jpg");
+    }
+
+    &__icon-line {
+      width: 768px;
     }
 
     &__title {
@@ -105,9 +116,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1050px;
-    padding-left: 175px;
-    padding-right: 0;
-    padding-top: 71px;
+    padding: 69px 0 140px 173px;
 
     &__text {
       padding-top: 48px;
@@ -115,8 +124,16 @@
       padding-bottom: 25px;
     }
 
+    &__author-name {
+      font-size: 17px;
+    }
+
     &__button {
-      margin-top: 5px;
+      margin-top: 10px;
+    }
+
+    &__icon-line {
+      width: 100%;
     }
   }
 }

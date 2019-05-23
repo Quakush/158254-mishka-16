@@ -1,10 +1,10 @@
 .modal-overlay {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .modal-overlay {
     width: 565px;
-    margin: 0 auto;
   }
 }
