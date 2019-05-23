@@ -52,7 +52,7 @@ gulp.task("sprite", function() {
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename("sprites.svg"))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"));
 });
 
@@ -99,4 +99,4 @@ gulp.task("build", gulp.series(
   "html"
   ));
 
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("server"));
