@@ -61,13 +61,13 @@
     align-items: center;
     padding: 78px 48px 86px;
     width: $tablet-width;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 350px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("img/review@2x.jpg");
     }
 
     &__icon-line {

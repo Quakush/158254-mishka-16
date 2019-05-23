@@ -191,7 +191,7 @@
     left: 10px;
     width: 33px;
     height: 22px;
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-size: 22px 22px;
   }
@@ -250,7 +250,7 @@
     }
   }
 
-  &__input-text:hover ~ .form-feedback__icon ,
+  &__input-text:hover ~ .form-feedback__icon,
   &__input-text:focus ~ .form-feedback__icon {
     fill: $mark-color;
     opacity: 1;
