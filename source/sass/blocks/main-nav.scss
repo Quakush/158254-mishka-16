@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  background-color: transparent;
 
   &__header {
     position: relative;
@@ -94,6 +95,7 @@
       width: 35%;
       text-align: right;
       border-top: 1px solid #ececec;
+      background-color: transparent;
     }
 
     &__logo {

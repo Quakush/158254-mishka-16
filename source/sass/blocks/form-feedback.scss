@@ -73,7 +73,7 @@
     &--name {
       display: flex;
       flex-direction: column;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
       padding-bottom: 20px;
 
       &:last-child {
@@ -199,8 +199,8 @@
   &__input-text {
     width: 100%;
     padding: 0;
-    padding-top: 20px;
-    padding-bottom: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border: none;
     border-bottom: 2px solid $color-title;
     font-size: 17px;
@@ -304,7 +304,7 @@
 
       &--phone {
         padding: 0;
-        padding-top: 50px;
+        padding-top: 47px;
       }
 
       &--email {
@@ -368,7 +368,7 @@
     &__field--name {
       flex-direction: row;
       justify-content: space-between;
-      padding-bottom: 20px;
+      padding-bottom: 22px;
     }
 
     &__label {
@@ -460,7 +460,7 @@
 
 @media (min-width: $desktop-width) {
   .form-feedback {
-    padding-bottom: 47px;
+    padding-bottom: 49px;
 
     &__fieldset {
       &--color {
@@ -473,6 +473,10 @@
 
       &--extra {
         padding-bottom: 51px;
+      }
+
+      &--type {
+        padding-top: 30px;
       }
     }
 
@@ -501,7 +505,7 @@
     }
 
     &__field--name {
-      margin-bottom: 7px;
+      margin-bottom: 5px;
     }
 
     &__list--color {

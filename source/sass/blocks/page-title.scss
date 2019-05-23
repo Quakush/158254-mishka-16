@@ -29,8 +29,13 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    padding: 97px 0;
+    padding: 94px 0 97px;
     font-size: 53px;
     line-height: 57px;
+
+    &__icon-fill {
+      width: 1150px;
+      bottom: -20px;
+    }
   }
 }
