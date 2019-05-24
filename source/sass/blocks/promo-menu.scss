@@ -12,10 +12,10 @@
 
   &__icon {
     opacity: 0.5;
+  }
 
-    &--fill {
+  &__fill {
       display: none;
-    }
   }
 
   &__item:hover .promo-menu__icon {
@@ -83,7 +83,7 @@
       }
     }
 
-    &__icon--fill {
+    &__fill {
       display: block;
       position: absolute;
       left: 0;
@@ -126,7 +126,7 @@
       }
     }
 
-    &__icon--fill {
+    &__fill {
       width: 1150px;
     }
   }

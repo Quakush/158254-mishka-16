@@ -10,49 +10,46 @@
   }
 
   &__icon {
+    display: block;
     fill: $mark-color;
 
     &--ecology {
-      padding-left: 8px;
-      padding-bottom: 14px;
+      margin-left: 8px;
+      margin-bottom: 14px;
     }
 
     &--style {
-      padding-top: 30px;
-      padding-bottom: 22px;
+      margin-top: 30px;
+      margin-bottom: 22px;
     }
 
     &--likes {
-      padding-top: 36px;
-      padding-left: 8px;
-      padding-bottom: 17px;
+      margin-top: 36px;
+      margin-left: 8px;
+      margin-bottom: 17px;
     }
 
     &--handmade {
-      padding-top: 30px;
-      padding-left: 5px;
-      padding-bottom: 15px;
+      margin-top: 30px;
+      margin-left: 5px;
+      margin-bottom: 15px;
     }
 
     &--support {
-      padding-top: 33px;
+      margin-top: 33px;
       margin-left: -5px;
-      padding-bottom: 23px;
+      margin-bottom: 23px;
     }
 
     &--gift {
-      padding-top: 32px;
-      padding-left: 5px;
-      padding-bottom: 16px;
+      margin-top: 32px;
+      margin-left: 5px;
+      margin-bottom: 16px;
     }
   }
 }
 
 .advantages__list-item {
-  span {
-    display: block;
-  }
-
   &--ecology {
     padding-right: 85px;
   }
@@ -84,38 +81,38 @@
 
     &__icon {
       &--ecology {
-        padding-left: 10px;
-        padding-bottom: 13px;
+        margin-left: 10px;
+        margin-bottom: 13px;
       }
 
       &--style {
-        padding-top: 59px;
-        padding-left: 3px;
-        padding-bottom: 23px;
+        margin-top: 59px;
+        margin-left: 3px;
+        margin-bottom: 23px;
       }
 
       &--likes {
-        padding-top: 62px;
-        padding-left: 10px;
-        padding-bottom: 18px;
+        margin-top: 62px;
+        margin-left: 10px;
+        margin-bottom: 18px;
       }
 
       &--handmade {
-        padding-top: 3px;
-        padding-left: 5px;
-        padding-bottom: 14px;
+        margin-top: 3px;
+        margin-left: 5px;
+        margin-bottom: 14px;
       }
 
       &--support {
-        padding-top: 60px;
+        margin-top: 60px;
         margin-left: -5px;
-        padding-bottom: 25px;
+        margin-bottom: 25px;
       }
 
       &--gift {
-        padding-top: 59px;
-        padding-left: 5px;
-        padding-bottom: 17px;
+        margin-top: 59px;
+        margin-left: 5px;
+        margin-bottom: 17px;
       }
     }
   }
