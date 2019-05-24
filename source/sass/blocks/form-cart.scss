@@ -1,4 +1,6 @@
 .form-cart {
+  width: 320px;
+  margin: 0 auto;
   padding: 31px 0 25px;
 
   &__title {
@@ -59,6 +61,7 @@
 @media (min-width: $tablet-width) {
   .form-cart {
     padding-top: 34px;
+    width: 565px;
 
     &__title {
       font-size: 30px;
@@ -90,6 +93,8 @@
 
 @media (min-width: $desktop-width) {
   .form-cart {
+    width: 565px;
+
     &__button-wrapper {
       width: 350px;
     }
