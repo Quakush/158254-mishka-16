@@ -42,6 +42,10 @@
     position: absolute;
     top: 26px;
     right: 28px;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   &__special-list {
