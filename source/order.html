@@ -15,7 +15,7 @@
   </div>
 
   <header class="page-header">
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened">
           <div class="main-nav__header">
             <a class="main-nav__logo" href="index.html" aria-label="Логотип Мишка">
               <picture>
@@ -24,7 +24,7 @@
                 <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="логотип Мишка">
               </picture>
             </a>
-            <button class="main-nav__toggle menu-toggle" type="button" aria-label="Меню"></button>
+            <button class="main-nav__toggle main-nav__toggle--hidden menu-toggle" type="button" aria-label="Меню"></button>
           </div>
           <ul class="main-nav__site-list site-navigation">
             <li class="site-navigation__item">
@@ -66,14 +66,11 @@
     <header class="main-header wrapper-body">
       <h1 class="main-header__title page-title">
         Вязание на заказ
-        <svg class="page-title__icon-fill" width="768" height="34">
-          <use xlink:href="#icon-fill"></use>
-        </svg>
       </h1>
     </header>
-    <p class="main-page__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
-      простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-feedback__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
+        простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="form-feedback__fieldset form-feedback__fieldset--type">
         <div class="form-feedback__wrapper">
           <h2 class="form-feedback__legend form-feedback__legend--type">Тип</h2>
@@ -227,6 +224,7 @@
     </div>
   </footer>
   <script src="js/menu-toggle.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>

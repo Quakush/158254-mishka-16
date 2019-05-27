@@ -1,8 +1,19 @@
 .form-feedback {
   display: flex;
   flex-direction: column;
-  padding-top: 17px;
+  padding-top: 0;
   padding-bottom: 53px;
+
+  &__description {
+    margin: 0 auto;
+    margin-bottom: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 260px;
+    font-family: $font-text;
+    font-size: 13px;
+    line-height: 24px;
+  }
 
   &__fieldset {
     display: flex;
@@ -277,7 +288,15 @@
 
 @media (min-width: $tablet-width) {
   .form-feedback {
+    padding-top: 7px;
     padding-bottom: 50px;
+
+    &__description {
+      width: $tablet-width;
+      padding: 28px 50px 0;
+      font-size: 17px;
+      line-height: 30px;
+    }
 
     &__fieldset {
       padding-top: 50px;
@@ -333,6 +352,10 @@
 
       &--phone {
         padding-top: 16px;
+      }
+
+      &--type {
+        margin-top: 5px;
       }
     }
 
@@ -460,7 +483,14 @@
 
 @media (min-width: $desktop-width) {
   .form-feedback {
-    padding-bottom: 49px;
+    padding-top: 70px;
+    padding-bottom: 46px;
+
+    &__description {
+      width: 700px;
+      padding: 0;
+      padding-bottom: 5px;
+    }
 
     &__fieldset {
       &--color {
@@ -478,6 +508,10 @@
       &--type {
         padding-top: 30px;
       }
+
+      &--email {
+        padding-bottom: 55px;
+      }
     }
 
     &__wrapper {
@@ -489,6 +523,10 @@
       width: 175px;
       padding-top: 17px;
       padding-left: 61px;
+
+      &--name {
+        margin-top: 3px;
+      }
     }
 
     &__list {

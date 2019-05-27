@@ -9,12 +9,13 @@
   color: $color-title;
   border-top: 1px solid #e1e1e1;
 
-  svg {
+  &__icon {
+    display: block;
     opacity: 0.7;
     fill: $mark-color;
   }
 
-  &:hover svg {
+  &:hover .copyright__icon {
     opacity: 1;
   }
 
@@ -25,7 +26,6 @@
 
 .copyright__text {
   margin-right: 30px;
-  padding-top: 3px;
 }
 
 @media (min-width: $tablet-width) {
