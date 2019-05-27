@@ -14,7 +14,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding: 0 50px;
-    padding-top: 35px;
+    padding-top: 42px;
 
     &__card-product {
       margin-bottom: 51px;
@@ -24,7 +24,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding-top: 99px;
+    padding-top: 77px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

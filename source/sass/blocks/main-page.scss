@@ -2,29 +2,12 @@
   margin: 0 auto;
   margin-top: -20px;
   width: 320px;
-
-  &__description {
-    margin: 0 auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 260px;
-    font-family: $font-text;
-    font-size: 13px;
-    line-height: 24px;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .main-page {
     margin-top: -95px;
     width: 768px;
-
-    &__description {
-      width: $tablet-width;
-      padding: 28px 50px 0;
-      font-size: 17px;
-      line-height: 30px;
-    }
   }
 }
 
@@ -32,12 +15,5 @@
   .main-page {
     margin-top: -99px;
     width: 1150px;
-
-    &__description {
-      padding: 0;
-      width: 700px;
-      padding-top: 90px;
-      padding-bottom: 5px;
-    }
   }
 }
