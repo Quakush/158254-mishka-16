@@ -10,6 +10,13 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@2x.jpg");
   }
+
+  &__iframe {
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
